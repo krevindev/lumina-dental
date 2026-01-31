@@ -50,7 +50,7 @@ export default function Hero() {
             backgroundImage: `url(${images.heroImage})`,
           }}
         >
-          <div style={{animationDuration: '5s'}} className="bg-[rgba(0,0,0,0)] animate-bounce shadow-xl backdrop-blur ease-in-out px-5 py-2 rounded-2xl border border-[rgba(255,255,255,.3)] absolute left-0 bottom-9 -translate-x-1/4 flex justify-center items-center">
+          <div style={{animationDuration: '5s'}} className="bg-[rgba(0,0,0,.1)] animate-bounce shadow-xl backdrop-blur ease-in-out px-5 py-2 rounded-2xl border border-[rgba(255,255,255,.3)] absolute left-0 bottom-9 -translate-x-1/4 flex justify-center items-center">
             <img src={images.heroPhoneIcon} className="mr-2" />
             <div className="flex flex-col justify-start items-center">
               <p className="text-sm">24 hour service</p>
