@@ -1,5 +1,7 @@
 import mainLogo from "../assets/logos/main-logo.png";
-import heroImage from "../assets/images/hero-image.jpg";
+import heroImage1 from "../assets/images/hero-image-1.jpg";
+import heroImage2 from "../assets/images/hero-image-2.jpg";
+import heroImage3 from "../assets/images/hero-image-3.jpg";
 
 // Services
 import service1Icon from "../assets/icons/service-1.svg";
@@ -13,7 +15,9 @@ import heroPhoneIcon from "../assets/icons/hero-phone.svg";
 
 export default {
   mainLogo,
-  heroImage,
+  heroImage1,
+  heroImage2,
+  heroImage3,
   service1Icon,
   service2Icon,
   service3Icon,
