@@ -23,7 +23,7 @@ export default function Header() {
         <img className="h-20 px-5 rounded-xl" src={images.mainLogo} />
       </div>
       {/* Left Container (Menu Nav)*/}
-      <div className="w-1/2 text-xl flex justify-end">
+      <div className="w-1/2 text-xl flex justify-end text-nowrap">
         <ul className="px-5 rounded-2xl flex justify-end items-center h-full py-5">
           <li className="mr-10">Home</li>
           <li className="mr-10">Services</li>
