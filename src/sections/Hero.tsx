@@ -68,6 +68,8 @@ export default function Hero() {
               <h4 className="text-sm font-bold">(302) 555-0107</h4>
             </div>
           </div>
+          <div className="bg-white w-125 h-125 absolute right-0 -translate-x-1/2 -translate-y-1/2 bottom-0 rounded-full blur-[100px] opacity-40"></div>
+          <div className="bg-white w-125 h-125 absolute left-0 top-0 translate-x-1/2 translate-y-1/2 rounded-full blur-[100px] opacity-40"></div>
         </div>
         <div className="flex justify-between items-center w-[10%] mt-5">
           {heroImagesData.map((imgData, idx) => (
