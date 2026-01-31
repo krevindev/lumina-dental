@@ -12,8 +12,12 @@ import service5Icon from "../assets/icons/service-5.svg";
 import service6Icon from "../assets/icons/service-6.svg";
 
 import heroPhoneIcon from "../assets/icons/hero-phone.svg";
+import aboutUsImage from "../assets/images/about-image.svg";
+import doubleCheckIcon from "../assets/icons/double-check-icon.svg";
 
 export default {
+  doubleCheckIcon,
+  aboutUsImage,
   mainLogo,
   heroImage1,
   heroImage2,
@@ -24,5 +28,5 @@ export default {
   service4Icon,
   service5Icon,
   service6Icon,
-  heroPhoneIcon
+  heroPhoneIcon,
 };
