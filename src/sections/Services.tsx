@@ -15,29 +15,29 @@ const servicesData: ServiceType[] = [
   },
   {
     title: "Cosmetic Dentistry",
-    description: "Transform your smile with modern aesthetic solutions",
+    description: "Personalized cosmetic treatments to enhance your smile and improve overall appearance",
     imgSrc: images.service2Icon,
   },
   {
     title: "Orthodontic Care",
-    description: "Customized braces and aligners to correct alignment and bite",
+    description: "Advanced braces and aligners to straighten teeth and improve bite alignment",
     imgSrc: images.service3Icon,
   },
   {
     title: "Dental Implants",
-    description: "Durable and natural-looking replacements for missing teeth",
+    description: "Strong tooth replacements designed to restore function and natural appearance",
     imgSrc: images.service4Icon,
   },
   {
     title: "Pediatic Dentistry",
     description:
-      "Caring treatments designed specifically for children’s comfort",
+      "Gentle dental care focused on children’s comfort and healthy smile development",
     imgSrc: images.service5Icon,
   },
   {
     title: "Restorative Dentistry",
     description:
-      "Restorative treatments focused on comfort, function, and long term oral health.",
+      "Comprehensive treatments to restore tooth function and support long term oral health",
     imgSrc: images.service6Icon,
   },
 ];
@@ -65,7 +65,7 @@ export default function Services() {
           />
         ))}
       </div>
-      <button className="rounded-full border border-white px-5 py-2 text-white mt-10">
+      <button className="rounded-full border border-white px-5 py-2 text-white mt-7">
         Get in Touch
       </button>
     </div>
