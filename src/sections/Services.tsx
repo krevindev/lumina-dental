@@ -61,7 +61,7 @@ const servicesData: ServiceType[] = [
 export default function Services() {
   return (
     <div className="h-screen flex justify-center items-center flex-col  min-h-fit relative">
-      <div className="bg-[#739FEC] z-0 w-[300px] h-[300px] opacity-70 absolute rounded-full right-0 top-0 translate-x-[70%] translate-y-[20%]" />
+      <div className="bg-[#739FEC] z-0 w-75 h-75 opacity-70 absolute rounded-full right-0 top-0 translate-x-[70%] translate-y-[20%]" />
 
       <div className="text-white w-full flex flex-col justify-center items-center">
         <h1 className="text-5xl">
