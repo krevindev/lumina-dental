@@ -1,3 +1,4 @@
+import AboutUs from "../sections/AboutUs";
 import Hero from "../sections/Hero";
 import Services from "../sections/Services";
 
@@ -6,6 +7,7 @@ export default function Home() {
     <div className="w-screen h-fit px-[10%] pt-30 flex flex-col">
       <Hero />
       <Services/>
+      <AboutUs/>
     </div>
   );
 }
