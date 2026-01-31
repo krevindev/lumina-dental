@@ -24,7 +24,7 @@ export default function Header() {
       </div>
       {/* Left Container (Menu Nav)*/}
       <div className="w-1/2 text-xl flex justify-end">
-        <ul className="px-5 rounded-2xl font-light flex justify-end items-center h-full py-5">
+        <ul className="px-5 rounded-2xl flex justify-end items-center h-full py-5">
           <li className="mr-10">Home</li>
           <li className="mr-10">Services</li>
           <li className="mr-10">About Us</li>
