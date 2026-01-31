@@ -1,22 +1,6 @@
 import images from "../constants/images";
+import ServiceCard from "../components/ServiceCard";
 
-type ServiceCardProps = {
-  title: string;
-  description: string;
-  imgSrc: string;
-};
-
-const ServiceCard = ({ title, description, imgSrc }: ServiceCardProps) => {
-  return (
-    <div className="bg-white rounded-3xl p-10 py-8 shadow-lg hover:-translate-y-1 transition-all ease-in">
-      <div className="flex justify-start items-center mb-2">
-        <img src={imgSrc} className="mr-5" />
-        <h1 className="text-3xl text-left font-bold text-[#6591DE]">{title}</h1>
-      </div>
-      <p className="text-lg mt-3 text-[#6591DE] text-justify">{description}</p>
-    </div>
-  );
-};
 type ServiceType = {
   title: string;
   description: string;
@@ -60,7 +44,7 @@ const servicesData: ServiceType[] = [
 
 export default function Services() {
   return (
-    <div className="h-screen flex justify-center items-center flex-col  min-h-fit relative">
+    <div className="h-[90vh] min-h-fit flex justify-center items-center flex-col relative py-20">
       <div className="bg-[#739FEC] z-0 w-75 h-75 opacity-70 absolute rounded-full right-0 top-0 translate-x-[70%] translate-y-[20%]" />
 
       <div className="text-white w-full flex flex-col justify-center items-center">
@@ -72,7 +56,7 @@ export default function Services() {
           cosmetic care, all tailored to each patient’s needs.
         </p>
       </div>
-      <div className="w-full pt-5 grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-3 z-10">
+      <div className="w-[90%] items-stretch pt-5 grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-3 z-10">
         {servicesData.map((sData) => (
           <ServiceCard
             title={sData.title}
