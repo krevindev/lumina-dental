@@ -1,35 +1,72 @@
+import { useEffect, useState } from "react";
 import images from "../constants/images";
 
 export default function Hero() {
+  const [heroIndex, setHeroIndex] = useState<number>(0);
+
+  useEffect(() => {
+    const heroIndexInterval = setInterval(() => {
+      setHeroIndex((prev) => (prev >= 2 ? 0 : prev + 1));
+    }, 3000);
+
+    return () => clearInterval(heroIndexInterval);
+  }, []);
+
   return (
-    <div className="h-[80vh] bg-blue-300 my-5 text-white flex justify-between relative">
-      <div className="bg-blue-200 z-0 w-[500px] h-[500px] fixed right-0 bottom-0 rounded-full blur-[100px] opacity-20"></div>
+    <div className="h-[80vh] my-5 text-white flex justify-between relative min-h-fit">
+      <div className="bg-white z-0 w-[500px] h-[500px] fixed right-0 bottom-0 rounded-full blur-[100px] opacity-30"></div>
+      <div className="bg-blue-200 z-0 w-[500px] h-[500px] absolute bottom-0 left-0 translate-y-[70%] -translate-x-[70%] rounded-full blur-[100px] opacity-40"></div>
+
+      <div className="bg-[#739FEC] w-[500px] h-[500px] opacity-40 absolute rounded-full left-0 top-0 -translate-x-[70%] -translate-y-[70%]" />
+      <div className="bg-[#739FEC] w-[300px] h-[300px] opacity-80 absolute rounded-full right-0 top-0 translate-x-[70%] -translate-y-[70%]" />
+
       {/* Left Container: Text */}
       <div className="w-1/2 flex z-10 justify-start items-center">
-        <div className="w-[80%]">
-          <div className="w-[80%]">
-            <h1 className="text-left text-5xl">
+        <div className="w-full">
+          <div className="w-[80%] min-w-fit">
+            <h1 className="text-left text-6xl">
               Where <b>Comfort</b> <br></br> Meets <b>Quality Care</b>
             </h1>
-            <p className="text-left pt-5">
+            <p className="text-left pt-7 text-2xl font-light">
               We are dedicated to creating a calm and guided experience where
               comfort supports each step of your dental visit
             </p>
           </div>
-          <div className="flex float-start mt-10 z-10">
-            <button className="bg-white text-blue-300 px-7 py-2 rounded-lg mr-5">
+          <div className="flex flex-start items-center flex-wrap mt-10 z-10 ">
+            <button className="bg-white py-2 text-[#6591DF] px-7 rounded-xl active:translate-y-1 mr-2 my-2  h-fit text-nowrap">
               Get Started
             </button>
-            <button className="px-7 py-2 rounded-lg border border-white">
+            <button className="px-7 py-2 rounded-xl border text-nowrap my-2 h-fit active:translate-y-1">
               Book Appointment
             </button>
           </div>
         </div>
       </div>
       {/* Right Container: Image */}
-      <div className="w-1/2  flex justify-center items-center z-10">
-        <div className="h-[90%]">
-          <img className="h-full" src={images.heroImage} />
+      <div className="w-1/2  flex justify-center flex-col items-center z-10">
+        <div
+          className="h-[90%] border w-[80%] bg-center bg-cover rounded-4xl rounded-br-[90px] bg-no-repeat shadow-lg relative"
+          style={{
+            backgroundImage: `url(${images.heroImage})`,
+          }}
+        >
+          <div style={{animationDuration: '5s'}} className="bg-[rgba(0,0,0,0)] animate-bounce shadow-xl backdrop-blur ease-in-out px-5 py-2 rounded-2xl border border-[rgba(255,255,255,.3)] absolute left-0 bottom-9 -translate-x-1/4 flex justify-center items-center">
+            <img src={images.heroPhoneIcon} className="mr-2" />
+            <div className="flex flex-col justify-start items-center">
+              <p className="text-sm">24 hour service</p>
+              <h4 className="text-sm font-bold">(302) 555-0107</h4>
+            </div>
+          </div>
+        </div>
+        <div className="flex justify-between items-center w-[10%] mt-5">
+          {[0, 1, 2].map((i) => (
+            <div
+              style={{
+                backgroundColor: `${i === heroIndex ? "rgba(255,255,255,1)" : "rgba(0,0,0,0)"}`,
+              }}
+              className="min-w-2 min-h-2 h-2 w-2 mx-1 border-white border-2 rounded-full transition-all ease-in-out duration-1000"
+            ></div>
+          ))}
         </div>
       </div>
     </div>
