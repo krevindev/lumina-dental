@@ -14,11 +14,11 @@ export default function Hero() {
 
   return (
     <div className="h-[80vh] my-5 text-white flex justify-between relative min-h-fit">
-      <div className="bg-white z-0 w-[500px] h-[500px] fixed right-0 bottom-0 rounded-full blur-[100px] opacity-30"></div>
-      <div className="bg-blue-200 z-0 w-[500px] h-[500px] absolute bottom-0 left-0 translate-y-[70%] -translate-x-[70%] rounded-full blur-[100px] opacity-40"></div>
+      <div className="bg-white z-0 w-125 h-125 fixed right-0 bottom-0 rounded-full blur-[100px] opacity-30"></div>
+      <div className="bg-blue-200 z-0 w-125 h-125 absolute bottom-0 left-0 translate-y-[70%] -translate-x-[70%] rounded-full blur-[100px] opacity-40"></div>
 
-      <div className="bg-[#739FEC] w-[500px] h-[500px] opacity-40 absolute rounded-full left-0 top-0 -translate-x-[70%] -translate-y-[70%]" />
-      <div className="bg-[#739FEC] w-[300px] h-[300px] opacity-80 absolute rounded-full right-0 top-0 translate-x-[70%] -translate-y-[70%]" />
+      <div className="bg-[#739FEC] w-125 h-125 opacity-40 absolute rounded-full left-0 top-0 -translate-x-[70%] -translate-y-[70%]" />
+      <div className="bg-[#739FEC] w-125 h-125 opacity-80 absolute rounded-full right-0 top-0 translate-x-[70%] -translate-y-[70%]" />
 
       {/* Left Container: Text */}
       <div className="w-1/2 flex z-10 justify-start items-center">
