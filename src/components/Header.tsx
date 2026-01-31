@@ -2,7 +2,7 @@ import images from "../constants/images";
 
 export default function Header() {
   return (
-    <div className=" w-full fixed z-[100] px-[10%] top-0 left-0 flex justify-between items-center box-border text-white h-30">
+    <div className=" w-full fixed z-100 px-[10%] top-0 left-0 flex justify-between items-center box-border text-white h-30">
       {/* Right Container (Logo) */}
       <div>
         <img className="h-20 backdrop-blur-sm px-5 rounded-xl" src={images.mainLogo} />
