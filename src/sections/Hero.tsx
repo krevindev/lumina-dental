@@ -1,12 +1,20 @@
 import { useEffect, useState } from "react";
 import images from "../constants/images";
 
+const heroImagesData = [
+  images.heroImage1,
+  images.heroImage2,
+  images.heroImage3,
+];
+
 export default function Hero() {
   const [heroIndex, setHeroIndex] = useState<number>(0);
 
   useEffect(() => {
     const heroIndexInterval = setInterval(() => {
-      setHeroIndex((prev) => (prev >= 2 ? 0 : prev + 1));
+      setHeroIndex((prev) =>
+        prev >= heroImagesData.length - 1 ? 0 : prev + 1,
+      );
     }, 3000);
 
     return () => clearInterval(heroIndexInterval);
@@ -27,7 +35,7 @@ export default function Hero() {
             <h1 className="text-left text-6xl">
               Where <b>Comfort</b> <br></br> Meets <b>Quality Care</b>
             </h1>
-            <p className="text-left pt-7 text-2xl font-light">
+            <p className="text-left w-[70%] pt-7 text-xl font-light">
               We are dedicated to creating a calm and guided experience where
               comfort supports each step of your dental visit
             </p>
@@ -45,12 +53,15 @@ export default function Hero() {
       {/* Right Container: Image */}
       <div className="w-1/2  flex justify-center flex-col items-center z-10">
         <div
-          className="h-[90%] border w-[80%] bg-center bg-cover rounded-4xl rounded-br-[90px] bg-no-repeat shadow-lg relative"
+          className="h-[80%] border w-[80%] bg-center bg-cover rounded-4xl rounded-br-[90px] bg-no-repeat shadow-lg relative transition-all duration-1000 bg-white"
           style={{
-            backgroundImage: `url(${images.heroImage})`,
+            backgroundImage: `url(${heroImagesData[heroIndex]})`,
           }}
         >
-          <div style={{animationDuration: '5s'}} className="bg-[rgba(0,0,0,.1)] animate-bounce shadow-xl backdrop-blur ease-in-out px-5 py-2 rounded-2xl border border-[rgba(255,255,255,.3)] absolute left-0 bottom-9 -translate-x-1/4 flex justify-center items-center">
+          <div
+            style={{ animationDuration: "5s" }}
+            className="bg-[rgba(0,0,0,.1)] animate-bounce shadow-xl backdrop-blur ease-in-out px-5 py-2 rounded-2xl border border-[rgba(255,255,255,.3)] absolute left-0 bottom-9 -translate-x-1/4 flex justify-center items-center"
+          >
             <img src={images.heroPhoneIcon} className="mr-2" />
             <div className="flex flex-col justify-start items-center">
               <p className="text-sm">24 hour service</p>
@@ -59,10 +70,11 @@ export default function Hero() {
           </div>
         </div>
         <div className="flex justify-between items-center w-[10%] mt-5">
-          {[0, 1, 2].map((i) => (
+          {heroImagesData.map((imgData, idx) => (
             <div
+              onClick={() => setHeroIndex(idx)}
               style={{
-                backgroundColor: `${i === heroIndex ? "rgba(255,255,255,1)" : "rgba(0,0,0,0)"}`,
+                backgroundColor: `${idx === heroIndex ? "rgba(255,255,255,1)" : "rgba(0,0,0,0)"}`,
               }}
               className="min-w-2 min-h-2 h-2 w-2 mx-1 border-white border-2 rounded-full transition-all ease-in-out duration-1000"
             ></div>
