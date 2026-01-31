@@ -1,13 +1,11 @@
 import Hero from "../sections/Hero";
+import Services from "../sections/Services";
 
 export default function Home() {
   return (
-    <div className="w-screen h-fit px-20 pt-30">
+    <div className="w-screen h-fit px-[10%] pt-30 flex flex-col">
       <Hero />
-      <Hero />
-      <Hero />
-      <Hero />
-      <Hero />
+      <Services/>
     </div>
   );
 }
