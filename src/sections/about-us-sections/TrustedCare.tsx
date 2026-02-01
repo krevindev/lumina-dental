@@ -4,20 +4,20 @@ export default function TrustedCare() {
   return (
     <div className="text-white">
       {/* Heading */}
-      <div className="text-left flex flex-col items-start justify-start">
-        <h1 className="text-5xl mr-5">
+      <div className="text-left flex flex-col md:flex-row items-start justify-start">
+        <h1 className="text-[clamp(24px,9vw,60px)] mr-5">
           Trusted <b>Care</b>
         </h1>
-        <p className="text-xl font-light w-1/2 pt-2">
+        <p className="text-[clamp(7px,4vw,20px)] flex items-center justify-center font-light w-full md:w-1/3">
           Dedicated to providing gentle, modern dental care backed by years of
           trusted service
         </p>
       </div>
-      <div className="w-full h-[70vh] my-10">
+      <div className="w-full h-[70vh] py-2 md:py-5 flex">
         {/* Content Card */}
-        <div className="bg-white h-full rounded-3xl rounded-br-[120px] flex items-center">
+        <div className="bg-white h-full min-h-fit flex-col md:flex-row rounded-3xl rounded-br-[13vw] flex items-center py-5 pb-10 px-5 md:py-10">
           {/* Image Part */}
-          <div className="w-1/2 h-full flex justify-center items-center rounded-5xl">
+          <div className="h-[200px] self-stretch sm:h-full w-full flex justify-center items-center rounded-5xl">
             <div
               className="w-[90%] h-[90%] bg-no-repeat rounded-4xl"
               style={{
@@ -28,23 +28,23 @@ export default function TrustedCare() {
             ></div>
           </div>
           {/* Text Part */}
-          <div className="text-[#739FEC] text-left w-1/2 px-20">
-            <h1 className="font-bold text-5xl mb-10">
+          <div className="text-[#739FEC] md:w-full text-left px-[5%] flex flex-col">
+            <h1 className="font-bold text-[clamp(24px,9vw,60px)] leading-tight md:leading-15  mb-3 md:mb-10">
               We've been in business since 2015
             </h1>
-            <p className="text-xl">
+            <p className="text-[clamp(7px,4vw,20px)]">
               Established in 2015, Lumina Dental combines modern dental
               techniques with a caring approach, focusing on patient comfort,
               personalized treatment, and long term relationships built on
               trust.
             </p>
-            <div className="mt-10">
+            <div className="mt-5 md:mt-10">
               <div className="flex items-center italic">
-                <img src={images.doubleCheckIcon} />{" "}
+                <img className="mr-2" src={images.doubleCheckIcon} />{" "}
                 <p>Over 5,000 patients served</p>
               </div>
               <div className="flex items-center italic">
-                <img src={images.doubleCheckIcon} />{" "}
+                <img className="mr-2" src={images.doubleCheckIcon} />{" "}
                 <p>Philippine Dental Association certified</p>
               </div>
             </div>
