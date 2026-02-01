@@ -56,7 +56,7 @@ export default function OurLocation() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <div className=" h-125 relative grid grid-cols-2">
+    <div className=" h-125 relative grid grid-cols-2 z-11">
       <div className="bg-white absolute z-0 h-full w-[150vw] left-1/2 -translate-x-1/2"></div>
       {/* Left: Text */}
       <div className="text-[#6591DF] z-10 text-left flex flex-col justify-center">
