@@ -21,7 +21,8 @@ export default function Hero() {
   }, []);
 
   return (
-    <div className="h-[80vh] my-5 text-white flex justify-between relative min-h-fit">
+    <div className="h-[80vh] my-5 text-white flex justify-center md:justify-between relative min-h-fit z-10">
+      {/* BG Elements */}
       <div className="bg-white z-0 w-125 h-125 fixed right-0 bottom-0 rounded-full blur-[100px] opacity-30"></div>
       <div className="bg-blue-200 z-0 w-125 h-125 absolute bottom-0 left-0 translate-y-[70%] -translate-x-[70%] rounded-full blur-[100px] opacity-40"></div>
 
@@ -29,18 +30,18 @@ export default function Hero() {
       <div className="bg-[#739FEC] w-125 h-125 opacity-80 absolute rounded-full right-0 top-0 translate-x-[70%] -translate-y-[70%]" />
 
       {/* Left Container: Text */}
-      <div className="w-1/2 flex z-10 justify-start items-center">
+      <div className="w-full text-center flex z-10 justify-center items-center md:justify-start md:w-1/2 md:text-left">
         <div className="w-full">
-          <div className="w-[80%] min-w-fit">
-            <h1 className="text-left text-6xl">
+          <div className="w-full md:w-[80%] min-w-fit">
+            <h1 className="text-[clamp(24px,9vw,60px)] leading-tight md:leading-15">
               Where <b>Comfort</b> <br></br> Meets <b>Quality Care</b>
             </h1>
-            <p className="text-left w-[70%] pt-7 text-xl font-light">
+            <p className="w-full md:w-[70%] pt-7 text-[clamp(7px,4vw,20px)] font-light">
               We are dedicated to creating a calm and guided experience where
               comfort supports each step of your dental visit
             </p>
           </div>
-          <div className="flex flex-start items-center flex-wrap mt-10 z-10 ">
+          <div className="w-full flex justify-center md:justify-start items-center flex-wrap mt-10 z-10 ">
             <button className="bg-white py-2 text-[#6591DF] px-7 rounded-xl active:translate-y-1 mr-2 my-2  h-fit text-nowrap">
               Get Started
             </button>
