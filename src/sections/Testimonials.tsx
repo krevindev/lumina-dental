@@ -2,7 +2,7 @@ import TestimonialCarousel from "@/components/TestimonialCarousel";
 
 export default function Testimonials() {
   return (
-    <div className="h-screen w-full text-white grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))]">
+    <div className="max-h-screen min-h-[80vh] h-[80vh] w-full text-white grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))]">
       <div className=" flex justify-center items-start flex-col text-left">
         <h1 className="text-5xl">
           Complete <b>Dental Care</b>, <br></br>
