@@ -23,7 +23,12 @@ import liLogo from "../assets/logos/li-logo.svg";
 
 import locationPin from "../assets/icons/location-pin.svg";
 import locationPinWhite from "../assets/icons/location-pin-white.svg";
+
+import starEmpty from "../assets/icons/star-empty.svg";
+import starFilled from "../assets/icons/star-filled.svg";
 export default {
+  starEmpty,
+  starFilled,
   locationPin,
   locationPinWhite,
   fbLogo,
