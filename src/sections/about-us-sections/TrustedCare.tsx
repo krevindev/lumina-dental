@@ -4,11 +4,11 @@ export default function TrustedCare() {
   return (
     <div className="text-white">
       {/* Heading */}
-      <div className="text-left flex items-center justify-start">
+      <div className="text-left flex flex-col items-start justify-start">
         <h1 className="text-5xl mr-5">
           Trusted <b>Care</b>
         </h1>
-        <p className="text-xl font-light w-1/3">
+        <p className="text-xl font-light w-1/2 pt-2">
           Dedicated to providing gentle, modern dental care backed by years of
           trusted service
         </p>
