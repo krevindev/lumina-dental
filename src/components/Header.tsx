@@ -6,17 +6,17 @@ export default function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 50)
-    }
+      setScrolled(window.scrollY > 50);
+    };
 
-    window.addEventListener("scroll", handleScroll)
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener("scroll", handleScroll)
-    }
-  }, [])
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <div
-      className={`${scrolled ? "backdrop-blur-2xl border-b h-20 shadow-xl shadow-[rgba(46,46,46,.05)]" : "bg-transparent h-30 border-none"} transition-all ease-in-out w-full border-[rgba(255,255,255,.4)] fixed z-100 px-[10%] top-0 left-0 flex justify-between items-center box-border text-white`}
+      className={`${scrolled ? "backdrop-blur-2xl bg-[rgba(101,145,223,.5)] border-b h-20 shadow-xl shadow-[rgba(46,46,46,.05)]" : "bg-transparent h-30 border-none"} transition-all ease-in-out w-full border-[rgba(255,255,255,.4)] fixed z-100 px-[10%] top-0 left-0 flex justify-between items-center box-border text-white`}
     >
       {/* Right Container (Logo) */}
       <div>
