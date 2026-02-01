@@ -2,22 +2,22 @@ import images from "../../constants/images";
 
 export default function TrustedCare() {
   return (
-    <div className="text-white">
+    <div className="text-white h-fit min-h-fit py-5">
       {/* Heading */}
-      <div className="text-left flex flex-col md:flex-row items-start justify-start">
+      <div className="text-left flex flex-col items-start justify-start">
         <h1 className="text-[clamp(24px,9vw,60px)] mr-5">
           Trusted <b>Care</b>
         </h1>
-        <p className="text-[clamp(7px,4vw,20px)] flex items-center justify-center font-light w-full md:w-1/3">
+        <p className="text-[clamp(7px,4vw,20px)] flex justify-start items-start md:items-center font-light w-full">
           Dedicated to providing gentle, modern dental care backed by years of
           trusted service
         </p>
       </div>
-      <div className="w-full h-[70vh] py-2 md:py-5 flex">
+      <div className="w-full h-fit py-2 md:py-5 flex">
         {/* Content Card */}
-        <div className="bg-white h-full min-h-fit flex-col md:flex-row rounded-3xl rounded-br-[13vw] flex items-center py-5 pb-10 px-5 md:py-10">
+        <div className="bg-white max-h-fit flex-col md:flex-row rounded-3xl rounded-br-[13vw] flex items-center py-5 pb-10 px-5 md:py-10">
           {/* Image Part */}
-          <div className="h-[200px] self-stretch sm:h-full w-full flex justify-center items-center rounded-5xl">
+          <div className="self-stretch h-[250px] md:h-full w-full flex justify-center items-center rounded-5xl">
             <div
               className="w-[90%] h-[90%] bg-no-repeat rounded-4xl"
               style={{
@@ -29,10 +29,10 @@ export default function TrustedCare() {
           </div>
           {/* Text Part */}
           <div className="text-[#739FEC] md:w-full text-left px-[5%] flex flex-col">
-            <h1 className="font-bold text-[clamp(24px,9vw,60px)] leading-tight md:leading-15  mb-3 md:mb-10">
+            <h1 className="font-bold text-[clamp(24px,9vw,60px)] leading-tight md:leading-15 mb-3 md:mb-10">
               We've been in business since 2015
             </h1>
-            <p className="text-[clamp(7px,4vw,20px)]">
+            <p className="text-[clamp(7px,4vw,15px)]">
               Established in 2015, Lumina Dental combines modern dental
               techniques with a caring approach, focusing on patient comfort,
               personalized treatment, and long term relationships built on
