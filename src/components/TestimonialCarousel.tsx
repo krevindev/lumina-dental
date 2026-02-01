@@ -10,6 +10,7 @@ import {
   CarouselPrevious,
   type CarouselApi,
 } from "@/components/ui/carousel";
+import images from "@/constants/images";
 
 export default function TestimonialCarousel() {
   const [api, setApi] = React.useState<CarouselApi>();
@@ -37,24 +38,32 @@ export default function TestimonialCarousel() {
             <CarouselItem key={index}>
               <Card className="m-px rounded-br-[50px]">
                 <CardContent className="flex flex-col items-center justify-center p-6 text-[#6591DE]">
-                  <p className="text-[#6591DE]">
+                  <p className="text-[#6591DE] italic">
                     “Lumina Dental made my visit easy and comfortable, with
                     staff who explained everything clearly.”
                   </p>
                   <h4 className="font-bold mt-5 text-xl">Mark Anthony Reyes</h4>
+                  <div className="grid grid-cols-5 gap-1 mt-3">
+                    <img src={images.starFilled} />
+                    <img src={images.starFilled} />
+                    <img src={images.starFilled} />
+                    <img src={images.starFilled} />
+                    <img src={images.starFilled} />
+                  </div>
                 </CardContent>
               </Card>
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
+        <CarouselPrevious className="size-5" />
+        <CarouselNext className="size-5" />
       </Carousel>
       <div className="text-muted-foreground py-2 text-center text-sm flex justify-center items-center">
         {/* Slide {current} of {count} */}
         {Array.from({ length: count }).map((_, idx) => (
           <div
-            className={`border-white border rounded-full size-2 m-1 mt-5 ${idx+1 === current ? "bg-white" : "bg-transparent"}`}
+            onClick={() => setCurrent(idx + 1)}
+            className={`border-white border rounded-full size-2 m-1 mt-5 ${idx + 1 === current ? "bg-white" : "bg-transparent"}`}
           ></div>
         ))}
       </div>
