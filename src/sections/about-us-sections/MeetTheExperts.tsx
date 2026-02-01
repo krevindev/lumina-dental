@@ -33,7 +33,7 @@ const expertsData: ExpertsType[] = [
 
 export default function MeetTheExperts() {
   return (
-    <div className="min-h-screen mt-20">
+    <div className="min-h-screen mt-40">
       <div className="text-white flex flex-col justify-start items-start text-left">
         <h1 className="text-5xl">
           Meet Our <b>Dedicated Experts</b>
