@@ -19,19 +19,13 @@ const BranchName = ({
   return (
     <div
       onClick={() => setActiveIndex(idx)}
-      className={`text-left grid grid-cols-[auto_1fr] w-fit grid-rows-2 mt-2 gap-x-3 cursor-pointer ${activeIndex === idx ? "border-2 bg-[#6591DF] text-white" : "border-2 border-[rgba(0,0,0,0)]"} transition-all ease-in py-3 px-5 rounded-2xl relative text-[#6591DF]`}
+      className={`text-left grid grid-cols-[auto_1fr] w-fit grid-rows-2 mt-2 gap-x-3 cursor-pointer ${activeIndex === idx ? "border-2 border-[#8FB9FF]" : "border-2 border-[rgba(0,0,0,0)]"} transition-all ease-in py-3 px-5 rounded-2xl relative text-[#6591DF]`}
     >
       {activeIndex === idx && (
         <div className="absolute w-[100%] h-0.5 bg-[#8FB9FF] left-full -translate-y-1/2 top-1/2"></div>
       )}
       <div className="row-span-1 col-span-1 row-start-1 col-start-1 flex justify-start items-center">
-        {
-          <img
-            src={
-              idx === activeIndex ? images.locationPinWhite : images.locationPin
-            }
-          />
-        }
+        <img src={images.locationPin} />
       </div>
       <h2 className="text-2xl font-medium col-start-2 row-start-1 col-span-17">
         {branchName}
