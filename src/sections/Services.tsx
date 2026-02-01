@@ -47,14 +47,14 @@ const servicesData: ServiceType[] = [
 
 export default function Services() {
   return (
-    <div className="h-[90vh] min-h-fit flex justify-center items-center flex-col relative py-20">
+    <div className="h-[90vh] min-h-fit flex justify-center items-center flex-col relative py-20 z-10">
       <div className="bg-[#739FEC] z-0 w-75 h-75 opacity-70 absolute rounded-full right-0 top-0 translate-x-[70%] translate-y-[20%]" />
 
       <div className="text-white w-full flex flex-col justify-center items-center">
-        <h1 className="text-5xl">
+        <h1 className="text-[clamp(24px,9vw,60px)] leading-tight md:leading-15">
           Our <b>Dental Services</b>
         </h1>
-        <p className="text-xl font-light py-6 w-1/2">
+        <p className="w-[90%] md:w-1/2 z-10 text-[clamp(7px,4vw,20px)] font-light py-2">
           Our dentists at Lumina Dental provide preventive, restorative, and
           cosmetic care, all tailored to each patient’s needs.
         </p>
