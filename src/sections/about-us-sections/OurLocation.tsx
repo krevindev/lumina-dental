@@ -1,4 +1,4 @@
-import { act, useState } from "react";
+import { useState } from "react";
 import images from "../../constants/images";
 
 type BranchNameProps = {
