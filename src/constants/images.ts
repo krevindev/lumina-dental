@@ -26,7 +26,10 @@ import locationPinWhite from "../assets/icons/location-pin-white.svg";
 
 import starEmpty from "../assets/icons/star-empty.svg";
 import starFilled from "../assets/icons/star-filled.svg";
+
+import phoneOutlineIcon from "../assets/icons/phone-outline.svg";
 export default {
+  phoneOutlineIcon,
   starEmpty,
   starFilled,
   locationPin,
