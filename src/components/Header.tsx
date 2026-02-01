@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import images from "../constants/images";
+import menuIcon from "../assets/icons/menu-icon.svg";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState<boolean>(false);
@@ -23,8 +24,11 @@ export default function Header() {
         <img className="h-20 rounded-xl" src={images.mainLogo} />
       </div>
       {/* Left Container (Menu Nav)*/}
-      <div className="w-1/2 text-xl flex justify-end text-nowrap">
-        <ul className="px-5 rounded-2xl flex justify-end items-center h-full py-5">
+      <div className="w-1/2 text-xl justify-end text-nowrap">
+        <div className="self-end justify-self-end h-full w-fit">
+          <img className="min-w-10" src={menuIcon} />
+        </div>
+        <ul className="px-5 rounded-2xl text-[16px] justify-end items-center h-full py-5 hidden lg:flex">
           <li className="mr-10">Home</li>
           <li className="mr-10">Services</li>
           <li className="mr-10">About Us</li>
