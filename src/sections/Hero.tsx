@@ -53,7 +53,7 @@ export default function Hero() {
       {/* Right Container: Image */}
       <div className="w-1/2  flex justify-center flex-col items-center z-10">
         <div
-          className="h-[80%] border w-[80%] bg-center bg-cover rounded-4xl rounded-br-[150px] bg-no-repeat shadow-lg relative transition-all duration-1000 bg-white"
+          className="h-[80%] border-2 border-white  w-[80%] bg-center bg-cover rounded-4xl rounded-br-[150px] bg-no-repeat shadow-lg relative transition-all duration-1000 bg-white"
           style={{
             backgroundImage: `url(${heroImagesData[heroIndex]})`,
           }}
