@@ -15,7 +15,17 @@ import heroPhoneIcon from "../assets/icons/hero-phone.svg";
 import aboutUsImage from "../assets/images/about-image.svg";
 import doubleCheckIcon from "../assets/icons/double-check-icon.svg";
 
+import expert1 from "../assets/images/expert-1.svg";
+import expert2 from "../assets/images/expert-2.svg";
+import expert3 from "../assets/images/expert-3.svg";
+import fbLogo from "../assets/logos/fb-logo.svg";
+import liLogo from "../assets/logos/li-logo.svg";
 export default {
+  fbLogo,
+  liLogo,
+  expert1,
+  expert2,
+  expert3,
   doubleCheckIcon,
   aboutUsImage,
   mainLogo,
