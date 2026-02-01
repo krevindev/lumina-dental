@@ -21,7 +21,7 @@ export default function Header() {
     >
       {/* Right Container (Logo) */}
       <div>
-        <img className="h-20 rounded-xl" src={images.mainLogo} />
+        <img className="h-15 md:h-20 min-w-fit rounded-xl" src={images.mainLogo} />
       </div>
       {/* Left Container (Menu Nav)*/}
       <div className="w-1/2 text-xl justify-end text-nowrap">
