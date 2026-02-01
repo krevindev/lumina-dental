@@ -20,7 +20,12 @@ import expert2 from "../assets/images/expert-2.svg";
 import expert3 from "../assets/images/expert-3.svg";
 import fbLogo from "../assets/logos/fb-logo.svg";
 import liLogo from "../assets/logos/li-logo.svg";
+
+import locationPin from "../assets/icons/location-pin.svg";
+import locationPinWhite from "../assets/icons/location-pin-white.svg";
 export default {
+  locationPin,
+  locationPinWhite,
   fbLogo,
   liLogo,
   expert1,
