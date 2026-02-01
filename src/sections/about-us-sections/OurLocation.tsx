@@ -19,7 +19,7 @@ const BranchName = ({
   return (
     <div
       onClick={() => setActiveIndex(idx)}
-      className={`text-left grid grid-cols-[auto_1fr] w-fit grid-rows-2 mt-2 gap-x-3 cursor-pointer ${activeIndex === idx ? "border-2 bg-[#8FB9FF] text-white" : "border-2 border-[rgba(0,0,0,0)]"} transition-all ease-in py-3 px-5 rounded-2xl relative text-[#8FB9FF]`}
+      className={`text-left grid grid-cols-[auto_1fr] w-fit grid-rows-2 mt-2 gap-x-3 cursor-pointer ${activeIndex === idx ? "border-2 bg-[#6591DF] text-white" : "border-2 border-[rgba(0,0,0,0)]"} transition-all ease-in py-3 px-5 rounded-2xl relative text-[#6591DF]`}
     >
       {activeIndex === idx && (
         <div className="absolute w-[100%] h-0.5 bg-[#8FB9FF] left-full -translate-y-1/2 top-1/2"></div>
@@ -81,7 +81,7 @@ export default function OurLocation() {
             />
           ))}
         </div>
-        <button className="border-[#6591DF] border text-[#6591DF] w-fit px-5 mt-5 py-3 rounded-lg">
+        <button className="bg-[#6591DF] text-white w-fit px-5 mt-5 py-3 rounded-lg">
           Book Appointment
         </button>
       </div>
