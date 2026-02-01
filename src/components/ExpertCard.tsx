@@ -14,16 +14,16 @@ export default function ExpertCard({
   description,
 }: ExpertCardProps) {
   return (
-    <div className="bg-white h-full min-h-fit flex flex-col justify-between rounded-3xl overflow-hidden text-[#739FEC] shadow-xl border-2 border-white">
+    <div className="bg-white md:w-[300px] lg:w-[330px] m-2 h-fit min-h-fit flex flex-col justify-between rounded-3xl overflow-hidden text-[#739FEC] shadow-xl border-2 border-white">
       <div
-        className="w-full h-[70%] rounded-br-[100px] bg-no-repeat bg-cover"
-        style={{ backgroundImage: `url(${imgSrc})` }}
+        className="w-full min-h-[250px] rounded-br-[100px] bg-no-repeat bg-cover"
+        style={{ backgroundImage: `url(${imgSrc})`, backgroundPositionX: 'center' }}
       ></div>
       <div className="w-full p-5 pb-7 text-left flex flex-col justify-between">
         <div>
           <p className="italic">{role}</p>
-          <h3 className="font-bold text-2xl">{name}</h3>
-          <p className="text-lg my-3">{description}</p>
+          <h3 className="font-bold text-[clamp(24px,9vw,24px)] leading-tight md:leading-tight">{name}</h3>
+          <p className="text-[clamp(7px,4vw,16px)] my-3">{description}</p>
         </div>
         <div className="flex mt-5 justify-start items-center">
           <img className="mr-3 size-6" src={images.fbLogo} />
