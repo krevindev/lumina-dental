@@ -80,7 +80,7 @@ export default function OurLocation() {
             />
           ))}
         </div>
-        <button className="bg-[#6591DF] text-white w-fit px-5 mt-5 py-3 rounded-lg">
+        <button className="border-[#6591DF] border text-[#6591DF] w-fit px-5 mt-5 py-3 rounded-lg">
           Book Appointment
         </button>
       </div>
