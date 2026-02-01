@@ -22,7 +22,7 @@ const BranchName = ({
       className={`text-left grid grid-cols-[auto_1fr] w-fit grid-rows-2 mt-2 gap-x-3 cursor-pointer ${activeIndex === idx ? "border-2 border-[#8FB9FF]" : "border-2 border-[rgba(0,0,0,0)]"} transition-all ease-in py-3 px-5 rounded-2xl relative text-[#6591DF]`}
     >
       {activeIndex === idx && (
-        <div className="absolute w-[100%] h-0.5 bg-[#8FB9FF] left-full -translate-y-1/2 top-1/2"></div>
+        <div className="absolute w-full h-0.5 bg-[#8FB9FF] left-full -translate-y-1/2 top-1/2"></div>
       )}
       <div className="row-span-1 col-span-1 row-start-1 col-start-1 flex justify-start items-center">
         <img src={images.locationPin} />
@@ -56,7 +56,7 @@ export default function OurLocation() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <div className=" h-[500px] relative grid grid-cols-2">
+    <div className=" h-125 relative grid grid-cols-2">
       <div className="bg-white absolute z-0 h-full w-[150vw] left-1/2 -translate-x-1/2"></div>
       {/* Left: Text */}
       <div className="text-[#6591DF] z-10 text-left flex flex-col justify-center">
