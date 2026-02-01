@@ -15,17 +15,20 @@ const servicesData: ServiceType[] = [
   },
   {
     title: "Cosmetic Dentistry",
-    description: "Personalized cosmetic treatments to enhance your smile and improve overall appearance",
+    description:
+      "Personalized cosmetic treatments to enhance your smile and improve overall appearance",
     imgSrc: images.service2Icon,
   },
   {
     title: "Orthodontic Care",
-    description: "Advanced braces and aligners to straighten teeth and improve bite alignment",
+    description:
+      "Advanced braces and aligners to straighten teeth and improve bite alignment",
     imgSrc: images.service3Icon,
   },
   {
     title: "Dental Implants",
-    description: "Strong tooth replacements designed to restore function and natural appearance",
+    description:
+      "Strong tooth replacements designed to restore function and natural appearance",
     imgSrc: images.service4Icon,
   },
   {
@@ -57,8 +60,9 @@ export default function Services() {
         </p>
       </div>
       <div className="w-[90%] items-stretch pt-5 grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-3 z-10">
-        {servicesData.map((sData) => (
+        {servicesData.map((sData, idx) => (
           <ServiceCard
+            key={idx}
             title={sData.title}
             description={sData.description}
             imgSrc={sData.imgSrc}

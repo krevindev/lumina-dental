@@ -74,6 +74,7 @@ export default function Hero() {
         <div className="flex justify-between items-center w-[10%] mt-5">
           {heroImagesData.map((_, idx) => (
             <div
+              key={idx}
               onClick={() => setHeroIndex(idx)}
               style={{
                 backgroundColor: `${idx === heroIndex ? "rgba(255,255,255,1)" : "rgba(0,0,0,0)"}`,

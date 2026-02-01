@@ -72,6 +72,7 @@ export default function OurLocation() {
         <div className="my-5">
           {branchesData.map((branchData, idx) => (
             <BranchName
+              key={idx}
               idx={idx}
               activeIndex={activeIndex}
               branchName={branchData.branchName}
