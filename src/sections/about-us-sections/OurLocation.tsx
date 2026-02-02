@@ -56,10 +56,10 @@ export default function OurLocation() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <div className=" h-125 relative grid grid-cols-2 z-11">
-      <div className="bg-white absolute z-0 h-full w-[150vw] left-1/2 -translate-x-1/2"></div>
+    <div className="min-h-fit py-5 relative grid grid-cols-2 grid-rows-2 z-11">
+      <div className="bg-white absolute z-0 min-h-125 h-full w-[150vw] left-1/2 -translate-x-1/2"></div>
       {/* Left: Text */}
-      <div className="text-[#6591DF] z-10 text-left flex flex-col justify-center">
+      <div className="text-[#6591DF] z-10 border h-full text-left flex flex-col justify-center">
         <h1 className="text-6xl pb-3">
           Our <b>Location</b>
         </h1>
