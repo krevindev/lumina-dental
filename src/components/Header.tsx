@@ -25,7 +25,7 @@ export default function Header() {
       </div>
       {/* Left Container (Menu Nav)*/}
       <div className="w-1/2 text-xl justify-end text-nowrap">
-        <div className="self-end justify-self-end h-full w-fit">
+        <div className="self-end justify-self-end h-full w-fit lg:hidden">
           <img className="min-w-10" src={menuIcon} />
         </div>
         <ul className="px-5 rounded-2xl text-[16px] justify-end items-center h-full py-5 hidden lg:flex">
