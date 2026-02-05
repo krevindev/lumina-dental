@@ -44,10 +44,10 @@ export default function Hero() {
             </p>
           </div>
           <div className="w-full flex justify-start items-center flex-wrap mt-3 lg:mt-10 z-10 text-[clamp(5px,4vw,16px)]">
-            <button className="bg-white px-[4%] py-[2%] text-[#7ba2e6] rounded-lg active:translate-y-1 mr-2 my-2  h-fit text-nowrap">
+            <button className="bg-white px-[4%] py-[1.5%] text-[#7ba2e6] rounded-lg active:translate-y-1 mr-2 my-2  h-fit text-nowrap">
               Get Started
             </button>
-            <button className="rounded-lg border text-nowrap px-[4%] py-[2%] my-2 h-fit active:translate-y-1">
+            <button className="rounded-lg border text-nowrap px-[4%] py-[1.5%] my-2 h-fit active:translate-y-1">
               Book Appointment
             </button>
           </div>
