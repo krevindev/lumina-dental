@@ -6,7 +6,7 @@ import Testimonials from "../sections/Testimonials";
 
 export default function Home() {
   return (
-    <div className="w-screen h-fit px-[10%] pt-30 flex flex-col">
+    <div className="w-screen h-fit px-[10%] pt-25 flex flex-col">
       <Hero />
       <Services/>
       <AboutUs/>
