@@ -19,7 +19,7 @@ export default function TrustedCare() {
           {/* Image Part */}
           <div className="self-stretch h-[250px] md:h-full w-full flex justify-center items-center rounded-5xl">
             <div
-              className="w-[90%] h-[90%] bg-no-repeat rounded-4xl"
+              className="w-[90%] h-[70%] sm:h-full bg-no-repeat rounded-4xl"
               style={{
                 backgroundImage: `url(${images.aboutUsImage})`,
                 backgroundPositionX: "100%",
@@ -29,7 +29,7 @@ export default function TrustedCare() {
           </div>
           {/* Text Part */}
           <div className="text-[#739FEC] md:w-full text-left px-[5%] flex flex-col">
-            <h1 className="font-bold text-[clamp(24px,9vw,60px)] leading-tight md:leading-15 mb-3 md:mb-10">
+            <h1 className="font-bold text-[clamp(24px,9vw,50px)] leading-11 py-1 sm:leading-tight mb-3 md:mb-10">
               We've been in business since 2015
             </h1>
             <p className="text-[clamp(7px,4vw,15px)]">
@@ -41,11 +41,11 @@ export default function TrustedCare() {
             <div className="mt-5 md:mt-10">
               <div className="flex items-center italic">
                 <img className="mr-2" src={images.doubleCheckIcon} />{" "}
-                <p>Over 5,000 patients served</p>
+                <p className="leading-4 sm:leading-tight">Over 5,000 patients served</p>
               </div>
-              <div className="flex items-center italic">
+              <div className="flex items-center italic mt-2">
                 <img className="mr-2" src={images.doubleCheckIcon} />{" "}
-                <p>Philippine Dental Association certified</p>
+                <p className="leading-4 sm:leading-tight">Philippine Dental Association certified</p>
               </div>
             </div>
           </div>
