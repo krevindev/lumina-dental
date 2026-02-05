@@ -33,17 +33,17 @@ const expertsData: ExpertsType[] = [
 
 export default function MeetTheExperts() {
   return (
-    <div className="min-h-fit mt-40 py-5">
+    <div className="min-h-fit mt-20 py-5">
       <div className="text-white flex flex-col justify-start items-start text-left">
-        <h1 className="text-[clamp(24px,9vw,60px)]">
-          Meet Our <b>Dedicated Experts</b>
+        <h1 className="text-[clamp(24px,9vw,50px)] text-left sm:text-center lg:text-[clamp(15px,9vw,50px)] leading-tight lg:leading-15">
+          Meet Our <b> Dedicated Experts</b>
         </h1>
         <p className="text-[clamp(7px,4vw,20px)] w-full md:w-1/2 font-light mt-2">
           Our team consists of experienced dental professionals committed to
           providing safe, reliable, and patient focused care
         </p>
       </div>
-   
+
       <div className="pt-3 md:pt-10 row-auto grid-cols-[repeat(auto-fit,minmax(350px,1fr))] md:grid-cols-3 gap-2 flex justify-evenly items-center flex-wrap w-full">
         {expertsData.map((expert, idx) => (
           <ExpertCard
