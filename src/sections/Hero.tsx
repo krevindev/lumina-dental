@@ -21,7 +21,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <div className="h-[80vh] my-5 text-white flex justify-center md:justify-between relative min-h-fit z-10">
+    <div className="h-[80vh] my-5 text-white flex justify-center lg:justify-between relative min-h-fit z-10">
       {/* BG Elements */}
       <div className="bg-white z-0 w-125 h-125 fixed right-0 bottom-0 rounded-full blur-[100px] opacity-30"></div>
       <div className="bg-blue-200 z-0 w-125 h-125 absolute bottom-0 left-0 translate-y-[70%] -translate-x-[70%] rounded-full blur-[100px] opacity-40"></div>
@@ -30,29 +30,29 @@ export default function Hero() {
       <div className="bg-[#739FEC] w-125 h-125 opacity-80 absolute rounded-full right-0 top-0 translate-x-[70%] -translate-y-[70%]" />
 
       {/* Left Container: Text */}
-      <div className="w-full text-center flex z-10 justify-center items-center md:justify-start md:w-1/2 md:text-left">
+      <div className="w-full text-center flex z-10 justify-center items-center lg:justify-start lg:w-1/2 lg:text-left">
         <div className="w-full">
           <div className="w-full md:w-[80%] min-w-fit">
-            <h1 className="text-[clamp(24px,9vw,60px)] leading-tight md:leading-15">
+            <h1 className="text-[clamp(24px,9vw,60px)] lg:text-[clamp(20px,9vw,50px)] leading-tight md:leading-15">
               Where <b>Comfort</b> <br></br> Meets <b>Quality Care</b>
             </h1>
-            <p className="w-full md:w-[70%] pt-7 text-[clamp(7px,4vw,20px)] font-light">
+            <p className="w-full lg:w-[70%] pt-7 text-[clamp(7px,4vw,20px)] font-light">
               We are dedicated to creating a calm and guided experience where
               comfort supports each step of your dental visit
             </p>
           </div>
-          <div className="w-full flex justify-center md:justify-start items-center flex-wrap mt-10 z-10 ">
-            <button className="bg-white py-2 text-[#6591DF] px-7 rounded-xl active:translate-y-1 mr-2 my-2  h-fit text-nowrap">
+          <div className="w-full flex justify-center lg:justify-start items-center flex-wrap mt-10 z-10 text-[clamp(5px,4vw,16px)]">
+            <button className="bg-white px-[4%] py-[2%] text-[#7ba2e6] rounded-lg active:translate-y-1 mr-2 my-2  h-fit text-nowrap">
               Get Started
             </button>
-            <button className="px-7 py-2 rounded-xl border text-nowrap my-2 h-fit active:translate-y-1">
+            <button className="rounded-lg border text-nowrap px-[4%] py-[2%] my-2 h-fit active:translate-y-1">
               Book Appointment
             </button>
           </div>
         </div>
       </div>
       {/* Right Container: Image */}
-      <div className="aspect-square max-w-[50vw] max-h-[80vh] justify-center flex-col items-center z-10 hidden md:flex">
+      <div className="w-1/2 max-h-[80vh] justify-center flex-col items-end z-10 hidden lg:flex">
         <div
           className="h-[80%] border-2 border-white  w-[80%] bg-center bg-cover rounded-4xl rounded-br-[150px] bg-no-repeat shadow-lg relative transition-all duration-1000 bg-white"
           style={{
@@ -69,20 +69,20 @@ export default function Hero() {
               <h4 className="text-sm font-bold">(302) 555-0107</h4>
             </div>
           </div>
+          <div className="flex justify-between items-center self-center w-[10%] z-10 top-full left-1/2 -translate-x-1/2 absolute mt-5">
+            {heroImagesData.map((_, idx) => (
+              <div
+                key={idx}
+                onClick={() => setHeroIndex(idx)}
+                style={{
+                  backgroundColor: `${idx === heroIndex ? "rgba(255,255,255,1)" : "rgba(0,0,0,0)"}`,
+                }}
+                className="min-w-2 min-h-2 h-2 w-2 mx-1 border-white border-2 rounded-full transition-all ease-in-out duration-1000"
+              ></div>
+            ))}
+          </div>
           <div className="bg-white w-125 h-125 absolute right-0 -translate-x-1/2 -translate-y-1/2 bottom-0 rounded-full blur-[100px] opacity-40"></div>
           <div className="bg-white w-125 h-125 absolute left-0 top-0 translate-x-1/2 translate-y-1/2 rounded-full blur-[100px] opacity-40"></div>
-        </div>
-        <div className="flex justify-between items-center w-[10%] mt-5">
-          {heroImagesData.map((_, idx) => (
-            <div
-              key={idx}
-              onClick={() => setHeroIndex(idx)}
-              style={{
-                backgroundColor: `${idx === heroIndex ? "rgba(255,255,255,1)" : "rgba(0,0,0,0)"}`,
-              }}
-              className="min-w-2 min-h-2 h-2 w-2 mx-1 border-white border-2 rounded-full transition-all ease-in-out duration-1000"
-            ></div>
-          ))}
         </div>
       </div>
     </div>
