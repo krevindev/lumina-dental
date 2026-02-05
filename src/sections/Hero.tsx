@@ -65,12 +65,12 @@ export default function Hero() {
           {/* Glass Phone Number */}
           <div
             style={{ animationDuration: "5s" }}
-            className="bg-[rgba(0,0,0,.1)] animate-bounce shadow-xl backdrop-blur ease-in-out px-5 py-2 rounded-2xl border border-[rgba(255,255,255,.3)] absolute left-0 bottom-9 -translate-x-1/4 flex justify-center items-center"
+            className="bg-[rgba(0,0,0,.1)] lg:animate-bounce shadow-xl backdrop-blur ease-in-out px-5 py-2 rounded-2xl border border-[rgba(255,255,255,.3)] absolute -left-3 -bottom-3 lg:bottom-9 lg:-translate-x-1/4 flex justify-center items-center"
           >
-            <img src={images.heroPhoneIcon} className="mr-2" />
+            <img src={images.heroPhoneIcon} className="mr-2 size-8" />
             <div className="flex flex-col justify-start items-center">
-              <p className="text-sm">24 hour service</p>
-              <h4 className="text-sm font-bold">(302) 555-0107</h4>
+              <p className="text-[10px] lg:text-sm">24 hour service</p>
+              <h4 className="text-[12px] lg:text-sm font-bold">(302) 555-0107</h4>
             </div>
           </div>
           {/* Pagination Circles */}
