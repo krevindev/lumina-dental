@@ -21,7 +21,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <div className="h-[80vh] my-5 text-white flex flex-col-reverse lg:flex-row justify-center lg:justify-between relative min-h-fit z-10">
+    <div className="h-[80vh] text-white flex flex-col-reverse lg:flex-row justify-center lg:justify-between relative min-h-fit z-10">
       {/* BG Elements */}
       <div className="bg-white z-0 w-125 h-125 fixed right-0 bottom-0 rounded-full blur-[100px] opacity-30"></div>
       <div className="bg-blue-200 z-0 w-125 h-125 absolute bottom-0 left-0 translate-y-[70%] -translate-x-[70%] rounded-full blur-[100px] opacity-40"></div>
@@ -30,18 +30,18 @@ export default function Hero() {
       <div className="bg-[#739FEC] w-125 h-125 opacity-80 absolute rounded-full right-0 top-0 translate-x-[70%] -translate-y-[70%]" />
 
       {/* Left Container: Text */}
-      <div className="w-full text-center flex z-10 justify-center items-center lg:justify-start lg:w-1/2 lg:text-left">
+      <div className="w-full flex z-10 justify-center items-center lg:justify-start lg:w-1/2 text-left">
         <div className="w-full">
           <div className="w-full md:w-[80%] min-w-fit">
-            <h1 className="text-[clamp(24px,9vw,60px)] lg:text-[clamp(20px,9vw,50px)] leading-tight md:leading-15">
+            <h1 className="text-[clamp(24px,9vw,50px)] lg:text-[clamp(20px,9vw,50px)] leading-tight lg:leading-15">
               Where <b>Comfort</b> <br></br> Meets <b>Quality Care</b>
             </h1>
-            <p className="w-full lg:w-[70%] pt-7 text-[clamp(7px,4vw,20px)] font-light">
+            <p className="w-full lg:w-[70%] pt-3 lg:pt-7 text-[clamp(7px,4vw,20px)] font-light">
               We are dedicated to creating a calm and guided experience where
               comfort supports each step of your dental visit
             </p>
           </div>
-          <div className="w-full flex justify-center lg:justify-start items-center flex-wrap mt-10 z-10 text-[clamp(5px,4vw,16px)]">
+          <div className="w-full flex justify-start items-center flex-wrap mt-3 lg:mt-10 z-10 text-[clamp(5px,4vw,16px)]">
             <button className="bg-white px-[4%] py-[2%] text-[#7ba2e6] rounded-lg active:translate-y-1 mr-2 my-2  h-fit text-nowrap">
               Get Started
             </button>
