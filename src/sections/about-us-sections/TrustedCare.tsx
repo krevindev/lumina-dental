@@ -17,7 +17,7 @@ export default function TrustedCare() {
         {/* Content Card */}
         <div className="bg-white max-h-fit flex-col lg:flex-row rounded-3xl rounded-br-[60px] sm:rounded-br-[13vw] flex items-center py-5 pb-5 mt-5 px-5 sm:py-10">
           {/* Image Element */}
-          <div className="self-stretch h-[200px] lg:h-full w-full flex justify-center items-center rounded-5xl">
+          <div className="self-stretch h-50 lg:h-full w-full flex justify-center items-center rounded-5xl">
             <div
               className="w-[90%] h-full bg-no-repeat bg-center bg-cover rounded-4xl bg-left-5 bg-top-100"
               style={{

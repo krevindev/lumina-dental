@@ -14,9 +14,9 @@ export default function ExpertCard({
   description,
 }: ExpertCardProps) {
   return (
-    <div className="bg-white w-full lg:w-[350px] m-2 h-fit min-h-fit flex flex-col md:flex-row lg:flex-col justify-between rounded-3xl overflow-hidden text-[#739FEC] shadow-xl border-2 border-white">
+    <div className="bg-white w-full lg:w-87.5 m-2 h-fit min-h-fit flex flex-col md:flex-row lg:flex-col justify-between rounded-3xl overflow-hidden text-[#739FEC] shadow-xl border-2 border-white">
       <div
-        className="w-full min-h-[250px] rounded-br-[50px] bg-no-repeat bg-cover"
+        className="w-full min-h-62.5 rounded-br-[50px] bg-no-repeat bg-cover"
         style={{ backgroundImage: `url(${imgSrc})`, backgroundPositionX: 'center' }}
       ></div>
       <div className="w-full p-5 pb-7 text-left flex flex-col justify-between">
