@@ -19,18 +19,18 @@ const BranchName = ({
   return (
     <div
       onClick={() => setActiveIndex(idx)}
-      className={`text-left grid grid-cols-[auto_1fr] w-fit grid-rows-1 mt-2 gap-x-3 cursor-pointer ${activeIndex === idx ? "border-2 border-[#8FB9FF]" : "border-2 border-[rgba(0,0,0,0)]"} transition-all ease-in py-3 px-5 rounded-2xl relative text-[#6591DF]`}
+      className={`text-left grid grid-cols-[auto_1fr] w-fit grid-rows-1 gap-x-3 cursor-pointer ${activeIndex === idx ? "border border-[#8FB9FF]" : "border border-[rgba(0,0,0,0)]"} transition-all ease-in my-1 py-3 px-5 rounded-xl relative text-[#6591DF] w-full`}
     >
-      {activeIndex === idx && (
+      {/* {activeIndex === idx && (
         <div className="absolute w-full h-0.5 bg-[#8FB9FF] left-full -translate-y-1/2 top-1/2"></div>
-      )}
-      <div className="row-span-1 col-span-1 row-start-1 col-start-1 flex justify-start items-center">
-        <img src={images.locationPin} />
+      )} */}
+      <div className="row-span-1 col-span-1 w-fit h-fit row-start-1 col-start-1 flex justify-start items-center">
+        <img className="w-fit size-6 " src={images.locationPin} />
       </div>
-      <h2 className="text-[clamp(20px,6vw,20px)] font-medium col-start-2 row-start-1 col-span-15 border flex items-center h-fit">
+      <h2 className="text-sm font-medium col-start-2 row-start-1 col-span-15 flex items-center h-fit">
         {branchName}
       </h2>
-      <p className="row-span-2 col-span-17 col-start-2 row-start-2 border">
+      <p className="grid text-[clamp(5px,4vw,12px)] row-span-2 col-span-17 col-start-2 row-start-2">
         {location}
       </p>
     </div>
@@ -56,18 +56,17 @@ export default function OurLocation() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <div className="min-h-fit py-5 relative grid grid-cols-1 grid-rows-1 md:grid-cols-2 z-11">
+    <div className="min-h-fit py-5 relative grid grid-cols-1 grid-rows-1 md:grid-cols-2 z-11 py-20">
       {/* White Wide BG */}
-      <div className="bg-white absolute z-0 min-h-125 h-full w-[150vw] left-1/2 -translate-x-1/2"></div>
+      <div className="bg-white absolute z-0 h-full w-[150vw] left-1/2 -translate-x-1/2"></div>
       {/* Left: Text */}
-
       <div className="text-[#6591DF] z-10 h-full text-left flex flex-col justify-center col-start-1 md:col-start-2">
-        <div className="w-full  hidden sm:flex">
+        <div className="w-full  hidden md:flex">
           <h1 className="text-[clamp(24px,9vw,50px)]">
             Our <b>Location</b>
           </h1>
         </div>
-        <div className="my-5">
+        <div className="my-5 flex flex-col w-fit p-3 justify-between shadow-sm border-2 border-white rounded-xl ">
           {branchesData.map((branchData, idx) => (
             <BranchName
               key={idx}
@@ -79,22 +78,23 @@ export default function OurLocation() {
             />
           ))}
         </div>
-        <button className="bg-[#6591DF] text-white w-fit px-5 mt-5 py-3 rounded-lg">
+        <button className="bg-[#6591DF] text-white w-fit px-5 mt-3 py-3 rounded-lg">
           Book Appointment
         </button>
       </div>
       {/* Right: Map */}
       <div className="w-full h-full z-10 flex justify-center items-center flex-col p-0 sm:p-5 col-start-1 row-start-1">
-        <div className="w-full sm:hidden flex">
+        <div className="w-full md:hidden flex">
           <h1 className="text-[clamp(24px,9vw,50px)] text-[#6591DF]">
             Our <b>Location</b>
           </h1>
         </div>
         <iframe
           src={locationSrcs[activeIndex]}
-          className="w-full h-full rounded-4xl rounded-br-[100px] shadow-lg border-4 border-white"
+          className="relative w-full md:w-[90%] min-h-[40vh] h-full rounded-4xl rounded-br-[100px] shadow-lg border-4 border-white"
           loading="lazy"
-        ></iframe>
+        />
+        {/* <h2 className="text-[#6591DF] mt-3 text-left px-5">{branchesData[activeIndex]["location"]}</h2> */}
       </div>
     </div>
   );
