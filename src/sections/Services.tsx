@@ -48,18 +48,19 @@ const servicesData: ServiceType[] = [
 export default function Services() {
   return (
     <div className="h-[90vh] min-h-fit flex justify-center items-center flex-col relative py-20 z-10">
-      <div className="bg-[#739FEC] z-0 w-75 h-75 opacity-70 absolute rounded-full right-0 top-0 translate-x-[70%] translate-y-[20%]" />
+      <div className="bg-[#739FEC] z-0 w-75 h-75 pt-20 opacity-70 absolute rounded-full right-0 top-0 translate-x-[70%] translate-y-[20%]" />
 
-      <div className="text-white w-full flex flex-col justify-center items-center">
-        <h1 className="text-[clamp(24px,9vw,60px)] leading-tight md:leading-15">
+      <div className="text-white w-full flex flex-col justify-center items-center z-10">
+        <h1 className="text-[clamp(24px,9vw,50px)] text-left sm:text-center lg:text-[clamp(15px,9vw,50px)] leading-tight lg:leading-15">
           Our <b>Dental Services</b>
         </h1>
-        <p className="w-[90%] md:w-1/2 z-10 text-[clamp(7px,4vw,20px)] font-light py-2">
+        <p className="w-full lg:w-[70%] text-left sm:text-center pt-2 text-[clamp(7px,4vw,20px)] font-light">
           Our dentists at Lumina Dental provide preventive, restorative, and
           cosmetic care, all tailored to each patient’s needs.
         </p>
       </div>
-      <div className="w-[90%] items-stretch pt-5 grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-3 z-10">
+      {/* grid-cols-[repeat(auto-fit,minmax(250px,1fr))] */}
+      <div className="w-full items-stretch pt-5 grid lg:grid-cols-3 gap-2 z-10">
         {servicesData.map((sData, idx) => (
           <ServiceCard
             key={idx}
