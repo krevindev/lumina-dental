@@ -8,7 +8,7 @@ type ServiceType = {
 };
 const servicesData: ServiceType[] = [
   {
-    title: "Dental Cleaning and Whitening",
+    title: "Dental Cleaning",
     description:
       "Gentle cleaning treatments to brighten teeth and maintain healthy gums",
     imgSrc: images.service1Icon,
@@ -60,7 +60,7 @@ export default function Services() {
         </p>
       </div>
       {/* grid-cols-[repeat(auto-fit,minmax(250px,1fr))] */}
-      <div className="w-full items-stretch pt-5 grid lg:grid-cols-3 gap-2 z-10">
+      <div className="w-full items-stretch pt-5 grid grid-cols-2 lg:grid-cols-3 gap-2 z-10">
         {servicesData.map((sData, idx) => (
           <ServiceCard
             key={idx}
