@@ -21,7 +21,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <div className="h-[80vh] my-5 text-white flex justify-center lg:justify-between relative min-h-fit z-10">
+    <div className="h-[80vh] my-5 text-white flex flex-col-reverse lg:flex-row justify-center lg:justify-between relative min-h-fit z-10">
       {/* BG Elements */}
       <div className="bg-white z-0 w-125 h-125 fixed right-0 bottom-0 rounded-full blur-[100px] opacity-30"></div>
       <div className="bg-blue-200 z-0 w-125 h-125 absolute bottom-0 left-0 translate-y-[70%] -translate-x-[70%] rounded-full blur-[100px] opacity-40"></div>
@@ -52,9 +52,9 @@ export default function Hero() {
         </div>
       </div>
       {/* Right Container: Image */}
-      <div className="w-1/2 max-h-[80vh] justify-center flex-col items-end z-10 hidden lg:flex">
+      <div className="lg:w-1/2 max-h-[80vh] flex-col z-10 h-full w-full flex justify-center items-center">
         <div
-          className="h-[80%] border-2 border-white  w-[80%] bg-center bg-cover rounded-4xl rounded-br-[150px] bg-no-repeat shadow-lg relative transition-all duration-1000 bg-white"
+          className="h-[80%] border-2 border-white w-full lg:w-[80%] bg-center bg-cover rounded-4xl rounded-br-[50px] lg:rounded-br-[150px] bg-no-repeat shadow-lg relative transition-all duration-1000 bg-white"
           style={{
             backgroundImage: `url(${heroImagesData[heroIndex]})`,
           }}
@@ -69,7 +69,7 @@ export default function Hero() {
               <h4 className="text-sm font-bold">(302) 555-0107</h4>
             </div>
           </div>
-          <div className="flex justify-between items-center self-center w-[10%] z-10 top-full left-1/2 -translate-x-1/2 absolute mt-5">
+          <div className="hidden lg:flex justify-between items-center self-center w-[10%] z-10 top-full left-1/2 -translate-x-1/2 absolute mt-5">
             {heroImagesData.map((_, idx) => (
               <div
                 key={idx}
