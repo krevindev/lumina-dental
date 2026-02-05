@@ -33,9 +33,11 @@ export default function Hero() {
       <div className="w-full flex z-10 justify-center items-center lg:justify-start lg:w-1/2 text-left">
         <div className="w-full">
           <div className="w-full md:w-[80%] min-w-fit">
+            {/* Header */}
             <h1 className="text-[clamp(24px,9vw,50px)] lg:text-[clamp(20px,9vw,50px)] leading-tight lg:leading-15">
               Where <b>Comfort</b> <br></br> Meets <b>Quality Care</b>
             </h1>
+            {/* Subheader/ Description */}
             <p className="w-full lg:w-[70%] pt-3 lg:pt-7 text-[clamp(7px,4vw,20px)] font-light">
               We are dedicated to creating a calm and guided experience where
               comfort supports each step of your dental visit
@@ -53,12 +55,14 @@ export default function Hero() {
       </div>
       {/* Right Container: Image */}
       <div className="lg:w-1/2 max-h-[80vh] flex-col z-10 h-full w-full flex justify-center items-center">
+        {/* Hero Image */}
         <div
           className="h-[80%] border-2 border-white w-full lg:w-[80%] bg-center bg-cover rounded-4xl rounded-br-[50px] lg:rounded-br-[150px] bg-no-repeat shadow-lg relative transition-all duration-1000 bg-white"
           style={{
             backgroundImage: `url(${heroImagesData[heroIndex]})`,
           }}
         >
+          {/* Glass Phone Number */}
           <div
             style={{ animationDuration: "5s" }}
             className="bg-[rgba(0,0,0,.1)] animate-bounce shadow-xl backdrop-blur ease-in-out px-5 py-2 rounded-2xl border border-[rgba(255,255,255,.3)] absolute left-0 bottom-9 -translate-x-1/4 flex justify-center items-center"
@@ -69,6 +73,7 @@ export default function Hero() {
               <h4 className="text-sm font-bold">(302) 555-0107</h4>
             </div>
           </div>
+          {/* Pagination Circles */}
           <div className="hidden lg:flex justify-between items-center self-center w-[10%] z-10 top-full left-1/2 -translate-x-1/2 absolute mt-5">
             {heroImagesData.map((_, idx) => (
               <div
