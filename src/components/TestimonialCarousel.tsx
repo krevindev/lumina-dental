@@ -62,6 +62,7 @@ export default function TestimonialCarousel() {
         {/* Slide {current} of {count} */}
         {Array.from({ length: count }).map((_, idx) => (
           <div
+            key={idx}
             onClick={() => setCurrent(idx + 1)}
             className={`border-white border rounded-full size-2 m-1 mt-5 ${idx + 1 === current ? "bg-white" : "bg-transparent"}`}
           ></div>
