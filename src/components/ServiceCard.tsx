@@ -45,7 +45,7 @@ const ServiceCard = ({ title, description, imgSrc }: ServiceCardProps) => {
       </p>
 
       <img
-        className={`size-3 sm:hidden flex transition-all ease-out absolute top-4 right-4 ${isExpanded ? "rotate-180" : "-rotate-360"}`}
+        className={`size-3 sm:hidden flex transition-all ease-out absolute top-4 opacity-50 right-4 ${isExpanded ? "rotate-180" : "-rotate-360"}`}
         src={!isExpanded ? images.vLeftIcon : images.vLeftIconWhite}
       />
     </div>
