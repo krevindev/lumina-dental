@@ -31,9 +31,10 @@ export default function TestimonialCarousel() {
   }, [api]);
 
   return (
-    <div className="mx-auto max-w-40 sm:max-w-xs">
+    <div className="max-w-[90vw] sm:max-w-xs max-h-[30vh] min-h-fit">
       <Carousel setApi={setApi} className="w-full max-w-xs">
-        <CarouselContent>
+        {/* <h1>Testimonials</h1> */}
+        <CarouselContent className="max-w-[80vw]">
           {Array.from({ length: 5 }).map((_, index) => (
             <CarouselItem key={index}>
               <Card className="m-px rounded-br-[50px]">

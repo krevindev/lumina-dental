@@ -56,7 +56,7 @@ export default function OurLocation() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <div className="min-h-fit py-5 relative grid grid-cols-1 grid-rows-1 md:grid-cols-2 z-11 py-20">
+    <div className="min-h-fit relative grid grid-cols-1 grid-rows-1 md:grid-cols-2 z-11 py-20">
       {/* White Wide BG */}
       <div className="bg-white absolute z-0 h-full w-[150vw] left-1/2 -translate-x-1/2"></div>
       {/* Left: Text */}
