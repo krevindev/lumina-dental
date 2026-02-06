@@ -25,7 +25,7 @@ const BranchName = ({
         <div className="absolute w-full h-0.5 bg-[#8FB9FF] left-full -translate-y-1/2 top-1/2"></div>
       )} */}
       <div className="row-span-1 col-span-1 w-fit h-fit row-start-1 col-start-1 flex justify-start items-center">
-        <img className="w-fit size-6 " src={images.locationPin} />
+        <img className="w-[30px] min-w-fit pr-5 sm:pr-5" src={images.locationPin} />
       </div>
       <h2 className="text-sm font-medium col-start-2 row-start-1 col-span-15 flex items-center h-fit">
         {branchName}
@@ -56,17 +56,17 @@ export default function OurLocation() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <div className="min-h-fit relative grid grid-cols-1 grid-rows-1 md:grid-cols-2 z-11 py-20">
+    <div className="min-h-fit relative flex flex-col-reverse md:flex-row z-11 py-20 justify-center items-center">
       {/* White Wide BG */}
       <div className="bg-white absolute z-0 h-full w-[150vw] left-1/2 -translate-x-1/2"></div>
       {/* Left: Text */}
-      <div className="text-[#6591DF] z-10 h-full text-left flex flex-col justify-center col-start-1 md:col-start-2">
-        <div className="w-full  hidden md:flex">
-          <h1 className="text-[clamp(24px,9vw,50px)]">
+      <div className="text-[#6591DF] w-fit md:w-1/2 z-10 h-full text-left flex flex-col justify-center items-end">
+        <div className="w-full hidden md:flex items-end justify-start text-right">
+          <h1 className="text-[clamp(24px,9vw,50px)] leading-tight text-left">
             Our <b>Location</b>
           </h1>
         </div>
-        <div className="my-5 flex flex-col w-fit p-3 justify-between shadow-sm border-2 border-white rounded-xl ">
+        <div className="my-5 flex flex-col w-full p-3 justify-between border-2 border-white rounded-xl ">
           {branchesData.map((branchData, idx) => (
             <BranchName
               key={idx}
@@ -78,12 +78,12 @@ export default function OurLocation() {
             />
           ))}
         </div>
-        <button className="bg-[#6591DF] text-white w-fit px-5 mt-3 py-3 rounded-lg">
+        <button className="bg-[#6591DF] text-white w-full lg:w-fit px-5 py-3 rounded-lg self-center lg:self-start">
           Book Appointment
         </button>
       </div>
       {/* Right: Map */}
-      <div className="w-full h-full z-10 flex justify-center items-center flex-col p-0 sm:p-5 col-start-1 row-start-1">
+      <div className="w-full h-full z-10 flex justify-center items-center flex-col p-0">
         <div className="w-full md:hidden flex">
           <h1 className="text-[clamp(24px,9vw,50px)] text-[#6591DF]">
             Our <b>Location</b>
@@ -91,7 +91,7 @@ export default function OurLocation() {
         </div>
         <iframe
           src={locationSrcs[activeIndex]}
-          className="relative w-full md:w-[90%] min-h-[40vh] h-full rounded-4xl rounded-br-[100px] shadow-lg border-4 border-white"
+          className="relative w-full md:w-[80%] min-h-[30vh] sm:min-h-[40vh] h-1/2 rounded-4xl rounded-br-[100px] shadow-sm border-4 border-white"
           loading="lazy"
         />
         {/* <h2 className="text-[#6591DF] mt-3 text-left px-5">{branchesData[activeIndex]["location"]}</h2> */}
