@@ -171,7 +171,7 @@ function CarouselItem({ className, ...props }: React.ComponentProps<"div">) {
 
 function CarouselPrevious({
   className,
-  variant = "outline",
+  variant = 'ghost',
   size = "icon",
   ...props
 }: React.ComponentProps<typeof Button>) {
@@ -194,14 +194,14 @@ function CarouselPrevious({
       {...props}
     >
       <ArrowLeft />
-      <span className="sr-only">Previous slide</span>
+      {/* <span className="sr-only">Previous slide</span> */}
     </Button>
   )
 }
 
 function CarouselNext({
   className,
-  variant = "outline",
+  variant = "ghost",
   size = "icon",
   ...props
 }: React.ComponentProps<typeof Button>) {
