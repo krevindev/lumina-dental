@@ -63,7 +63,7 @@ export default function OurLocation() {
       <div className="text-[#6591DF] w-fit md:w-1/2 z-10 h-full text-left flex flex-col justify-center items-end">
         <div className="w-full hidden md:flex items-end justify-start text-right">
           <h1 className="text-[clamp(24px,9vw,50px)] leading-tight text-left">
-            Our <b>Location</b>
+            Our <b>Locations</b>
           </h1>
         </div>
         <div className="my-5 flex flex-col w-full p-3 justify-between border-2 border-white rounded-xl ">
