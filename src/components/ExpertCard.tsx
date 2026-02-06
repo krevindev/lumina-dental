@@ -29,9 +29,9 @@ export default function ExpertCard({
           {name}
         </h3>
         <p className="text-[clamp(7px,4vw,16px)] my-3">{description}</p>
-        <div className="flex justify-start items-center">
-          <img className="mr-3 size-6" src={images.fbLogo} />
-          <img className="size-6" src={images.liLogo} />
+        <div className="flex justify-start items-center py-t">
+          <img className="mr-3 size-5" src={images.fbLogo} />
+          <img className="size-5" src={images.liLogo} />
         </div>
       </div>
     </div>
