@@ -122,3 +122,12 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+@theme {
+  --font-sans: InterVariable, sans-serif;
+}
+
+* {
+  font-family: InterVariable;
+}
