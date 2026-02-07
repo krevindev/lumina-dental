@@ -16,8 +16,8 @@ export default function ContactUs() {
           <div className="bg-[#6591DF] w-full md:max-w-[450px] md:w-[90%] bg-radial from-[rgba(255,255,255,.2)] text-left rounded-xl rounded-br-[100px] text-white py-10 px-5">
             <h2 className="text-white text-xl">NEED HELP?</h2>
 
-            <h1 className=" text-5xl font-bold">Get in Touch</h1>
-            <p className="font-light pt-5 text-[clamp(7px,4vw,15px)]">
+            <h1 className="text-[clamp(24px,9vw,45px)] font-bold">Get in Touch</h1>
+            <p className="font-light text-[clamp(7px,3vw,15px)]">
               Have a question or dental concern? Get in touch with Lumina Dental
               and receive personalized support from our experienced team.
             </p>
