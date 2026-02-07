@@ -65,7 +65,9 @@ export default function Header() {
         <button onClick={() => setIsSideNavOpen(false)} className="">
           <img src={closeIcon} className="size-10" />
         </button>
-        <ul className="self-center justify-self-center flex flex-col justify-center h-full items-center border w-full min-w-fit p-3 text-[#6591DF]">
+        <ul
+          className={`${isSideNavOpen ? "border px-5" : "px-0"} self-center justify-self-center flex flex-col justify-center h-full items-center w-full min-w-fit text-[#6591DF]`}
+        >
           {[
             { title: "Home", href: "#home" },
             { title: "Services", href: "#services" },
