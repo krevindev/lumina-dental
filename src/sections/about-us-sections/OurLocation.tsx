@@ -26,7 +26,7 @@ const BranchName = ({
       )} */}
       <div className="row-span-1 col-span-1 w-fit h-fit row-start-1 col-start-1 flex justify-start items-center">
         <img
-          className="w-[30px] min-w-fit pr-5 sm:pr-5"
+          className="w-7.5 min-w-fit pr-5 sm:pr-5"
           src={images.locationPin}
         />
       </div>
