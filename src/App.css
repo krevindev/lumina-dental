@@ -8,3 +8,7 @@
   background: rgb(194, 216, 255);
   color: rgb(123, 156, 225);
 }
+
+* {
+  scroll-behavior: smooth;
+}
