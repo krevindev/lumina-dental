@@ -42,7 +42,7 @@ export default function Header() {
             <li className="mr-10">About Us</li>
           </a>
           <a href="#contact-us">
-            <button className="bg-white text-[#6591DF] px-5 py-1 rounded-lg">
+            <button className="bg-white text-[#6591DF] px-5 py-1 rounded-lg cursor-pointer">
               Contact
             </button>
           </a>
