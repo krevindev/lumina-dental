@@ -11,9 +11,9 @@ import {
 export function FormSelect() {
   return (
     <Select>
-      <SelectTrigger className="border my-2 border-[rgba(101,145,223,.43)] text-[#6591DF]  focus:border-[rgba(101,145,223,.43)] rounded-lg">
+      <SelectTrigger className="border my-2 border-[rgba(101,145,223,.43)] text-[rgba(101,145,223,.78)]  focus:border-[rgba(101,145,223,.43)] rounded-lg font-light">
         <SelectValue
-          className="text-[#6591DF] placeholder:text-[rgba(101,145,223,.78)] placeholder:text-sm "
+          className="text-[#6591DF] placeholder:text-[rgba(101,145,223,.78)] placeholder:text-sm placeholder:font-light "
           placeholder="Select service"
         />
       </SelectTrigger>
