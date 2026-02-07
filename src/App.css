@@ -3,3 +3,8 @@
   padding: 2rem;
   text-align: center;
 }
+
+::selection {
+  background: rgb(194, 216, 255);
+  color: rgb(123, 156, 225);
+}
