@@ -39,7 +39,7 @@ const ServiceCard = ({ title, description, imgSrc }: ServiceCardProps) => {
         </h2>
       </div>
       <p
-        className={`${!isExpanded && "hidden"} pt-3 max-h-full h-full sm:flex text-[clamp(7px,4vw,15px)] text-white sm:text-[#6591DE] leading-tight text-left px-4 sm:px-0 z-10 transition-all ease-in`}
+        className={`${!isExpanded && "hidden"} pt-3 max-h-full h-full sm:flex text-[clamp(10px,3vw,15px)] text-white sm:text-[#6591DE] leading-tight text-left px-4 sm:px-0 z-10 transition-all ease-in`}
       >
         {description}
       </p>
