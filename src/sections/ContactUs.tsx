@@ -48,7 +48,7 @@ export default function ContactUs() {
           </div>
         </div>
         <div className="w-full h-fit ">
-          <form className="bg-white h-fit w-full rounded-3xl p-10 border-[rgba(101,145,223,.43)] border shadow-lg py-12]">
+          <form className="bg-white h-fit w-full max-w-[500px] rounded-3xl p-10 border-[rgba(101,145,223,.43)] border shadow-lg py-12]">
             {/*  Heading*/}
             <div className="z-20 text-center w-full mb-5 md:mb-10">
               <h1 className="text-[#6591DF] text-5xl text-nowrap">
