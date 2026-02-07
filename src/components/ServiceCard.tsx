@@ -14,7 +14,7 @@ const ServiceCard = ({ title, description, imgSrc }: ServiceCardProps) => {
     <div
       onMouseOver={() => setIsExpanded(true)}
       onMouseOut={() => setIsExpanded(false)}
-      className={`${!isExpanded ? "bg-white" : "bg-[#6591DE] border-[rgba(255,255,255,.4)] border"} rounded-2xl w-full h-full py-3 px-0 md:py-[4%] box-border sm:px-10 shadow-lg hover:-translate-y-1 transition-all ease-in-out justify-center items-center flex flex-col relative overflow-hidden sm:pointer-events-none`}
+      className={`${!isExpanded ? "bg-white" : "bg-[#6591DE] border-[rgba(255,255,255,.4)] border"} rounded-2xl w-full h-full py-3 px-0 md:py-[8%] box-border sm:px-10 shadow-lg md:hover:-translate-y-1 transition-all ease-in-out justify-center items-center flex flex-col relative overflow-hidden sm:pointer-events-none`}
     >
       {/* Card BG Element */}
       <div className="size-75 z-0 bg-blue-300 opacity-8 absolute right-0 bottom-0 rounded-full translate-x-1/2 translate-y-1/2" />
@@ -39,7 +39,7 @@ const ServiceCard = ({ title, description, imgSrc }: ServiceCardProps) => {
         </h2>
       </div>
       <p
-        className={`${!isExpanded && "hidden"} pt-3 h-full sm:flex text-[clamp(5px,3vw,17px)] text-white sm:text-[#6591DE] leading-tight text-left px-4 sm:px-0 z-10 transition-all ease-in`}
+        className={`${!isExpanded && "hidden"} pt-3 max-h-full h-full sm:flex text-[clamp(7px,4vw,15px)] text-white sm:text-[#6591DE] leading-tight text-left px-4 sm:px-0 z-10 transition-all ease-in`}
       >
         {description}
       </p>
