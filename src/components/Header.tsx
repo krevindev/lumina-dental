@@ -21,7 +21,10 @@ export default function Header() {
     >
       {/* Right Container (Logo) */}
       <div>
-        <img className="h-15 md:h-20 min-w-fit rounded-xl" src={images.mainLogo} />
+        <img
+          className="h-15 md:h-20 min-w-fit rounded-xl"
+          src={images.mainLogo}
+        />
       </div>
       {/* Left Container (Menu Nav)*/}
       <div className="w-1/2 text-xl justify-end text-nowrap">
@@ -29,12 +32,20 @@ export default function Header() {
           <img className="min-w-10" src={menuIcon} />
         </div>
         <ul className="px-5 rounded-2xl text-[16px] justify-end items-center h-full py-5 hidden lg:flex">
-          <li className="mr-10">Home</li>
-          <li className="mr-10">Services</li>
-          <li className="mr-10">About Us</li>
-          <button className="bg-white text-[#6591DF] px-5 py-1 rounded-lg">
-            Contact
-          </button>
+          <a href="#home">
+            <li className="mr-10">Home</li>
+          </a>
+          <a href="#services">
+            <li className="mr-10">Services</li>
+          </a>
+          <a href="#about-us">
+            <li className="mr-10">About Us</li>
+          </a>
+          <a href="#contact-us">
+            <button className="bg-white text-[#6591DF] px-5 py-1 rounded-lg">
+              Contact
+            </button>
+          </a>
         </ul>
       </div>
     </div>

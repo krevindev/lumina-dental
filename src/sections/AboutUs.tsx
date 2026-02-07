@@ -4,7 +4,7 @@ import TrustedCare from "./about-us-sections/TrustedCare";
 
 export default function AboutUs() {
   return (
-    <div className="w-full min-h-screen py-10">
+    <div id="about-us" className="w-full min-h-screen py-10">
       <TrustedCare />
       <MeetTheExperts/>
       <OurLocation/>

@@ -6,7 +6,7 @@ import images from "@/constants/images";
 
 export default function ContactUs() {
   return (
-    <div className="min-h-[80vh] relative flex flex-col justify-center items-center text-[#6591DF] bg-radial from-[#B3CEFF] to-white py-20">
+    <div id="contact-us" className="min-h-[80vh] relative flex flex-col justify-center items-center text-[#6591DF] bg-radial from-[#B3CEFF] to-white py-20">
       <div className="w-[150vw] bg-white h-full left-1/2 -translate-x-1/2 absolute z-10" />
 
       {/* Body */}

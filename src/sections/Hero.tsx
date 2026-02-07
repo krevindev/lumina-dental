@@ -21,7 +21,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <div className="h-[80vh] text-white flex flex-col-reverse lg:flex-row justify-center lg:justify-between relative min-h-fit z-10">
+    <div id="home" className="h-[80vh] text-white flex flex-col-reverse lg:flex-row justify-center lg:justify-between relative min-h-fit z-10">
       {/* BG Elements */}
       <div className="bg-white z-0 w-125 h-125 fixed right-0 bottom-0 rounded-full blur-[100px] opacity-30"></div>
       <div className="bg-blue-200 z-0 w-125 h-125 absolute bottom-0 left-0 translate-y-[70%] -translate-x-[70%] rounded-full blur-[100px] opacity-40"></div>
