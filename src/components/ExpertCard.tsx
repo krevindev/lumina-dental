@@ -17,7 +17,7 @@ export default function ExpertCard({
     <div className="bg-white w-full lg:w-87.5 m-2 h-full min-h-fit flex flex-col sm:flex-row lg:flex-col justify-between rounded-3xl overflow-hidden text-[#739FEC] shadow-xl border-2 border-white">
       {/* Expert Image */}
       <div
-        className="min-h-62.5 w-full rounded-br-[50px] bg-no-repeat bg-cover"
+        className="min-h-62.5 w-full rounded-br-[120px] bg-no-repeat bg-cover"
         style={{
           backgroundImage: `url(${imgSrc})`,
           backgroundPositionX: "center",
