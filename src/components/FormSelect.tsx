@@ -13,7 +13,7 @@ export function FormSelect() {
     <Select>
       <SelectTrigger className="border my-2 border-[rgba(101,145,223,.43)] text-[#6591DF]  focus:border-[rgba(101,145,223,.43)] rounded-lg">
         <SelectValue
-          className="text-[#6591DF] placeholder:text-[rgba(101,145,223,.78)]"
+          className="text-[#6591DF] placeholder:text-[rgba(101,145,223,.78)] placeholder:text-sm "
           placeholder="Select service"
         />
       </SelectTrigger>
