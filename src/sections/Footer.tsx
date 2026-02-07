@@ -6,7 +6,7 @@ export default function Footer() {
       {/* Row 1 */}
       <div className=" row-span-full hidden md:flex flex-col">
         <img className="w-[50%]" src={images.mainLogo} />
-        <p className="text-left text-xs max-w-[80%] leading-6 font-light">
+        <p className="text-left text-[11px] max-w-[80%] leading-6 tracking-wide font-light">
           Lumina Dental offers dependable dental treatments supported by modern
           facilities and an experienced dental team. We focus on delivering
           consistent, patient centered care in a clean and professional
