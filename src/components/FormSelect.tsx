@@ -18,13 +18,16 @@ export function FormSelect() {
         />
       </SelectTrigger>
       <SelectContent>
-        <SelectGroup className="text-[#6591DF] placeholder:text-[rgba(101,145,223,.78)]">
-          <SelectLabel>Fruits</SelectLabel>
-          <SelectItem value="apple">Apple</SelectItem>
-          <SelectItem value="banana">Banana</SelectItem>
-          <SelectItem value="blueberry">Blueberry</SelectItem>
-          <SelectItem value="grapes">Grapes</SelectItem>
-          <SelectItem value="pineapple">Pineapple</SelectItem>
+        <SelectGroup>
+          <SelectLabel>Purpose of Inquiry</SelectLabel>
+          <SelectItem value="general-inquiry">General Inquiry</SelectItem>
+          <SelectItem value="appointment-request">Appointment Request</SelectItem>
+          <SelectItem value="billing-questions">
+            Billing or Insurance Questions
+          </SelectItem>
+          <SelectItem value="treatment-consultation">Treatment Consultation</SelectItem>
+          <SelectItem value="feedback">Feedback or Suggestions</SelectItem>
+          <SelectItem value="partnership">Partnership / Collaboration</SelectItem>
         </SelectGroup>
       </SelectContent>
     </Select>
