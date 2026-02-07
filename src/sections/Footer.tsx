@@ -2,11 +2,11 @@ import images from "@/constants/images";
 
 export default function Footer() {
   return (
-    <div className="h-fit min-h-fit w-full grid grid-rows-7 py-10 text-white text-left gap-5 grid-cols-[repeat(auto-fit,minmax(300px,1fr))]">
+    <div className="h-fit min-h-fit w-full grid grid-cols-3 grid-rows-3 py-10 text-white text-left gap-5">
       {/* Row 1 */}
-      <div className=" row-span-full hidden md:flex flex-col">
-        <img className="w-[50%]" src={images.mainLogo} />
-        <p className="text-left text-[11px] max-w-[80%] leading-6 tracking-wide font-light">
+      <div className=" row-span-3 w-full col-span-1 flex flex-col">
+        <img className="w-[50%] min-w-[150px]" src={images.mainLogo} />
+        <p className="text-left text-[11px] max-w-[80%] leading-5 tracking-wide font-light">
           Lumina Dental offers dependable dental treatments supported by modern
           facilities and an experienced dental team. We focus on delivering
           consistent, patient centered care in a clean and professional
@@ -14,7 +14,7 @@ export default function Footer() {
         </p>
       </div>
       {/* Row 2 */}
-      <div className=" row-span-full grid">
+      <div className="  row-span-full grid col-start-2 row-start-1">
         <h2 className="font-bold text-lg">Contact Us</h2>
         <div className="text-xs">
           <p className="font-semibold">Marcelius Branch</p>
@@ -26,7 +26,7 @@ export default function Footer() {
         </div>
       </div>
       {/* Row 3 */}
-      <div className="border  row-span-full">
+      <div className=" col-start-3">
         <h2 className="font-semibold text-lg">Follow Us</h2>
       </div>
       <div className="w-full border-t col-span-full flex items-center justify-between py-5 text-sm font-light">
