@@ -39,7 +39,7 @@ export default function ContactUs() {
               <div className="grid my-1 h-full text-[#6591DF] grid-cols-[auto_1fr] grid-rows-2 gap-x-3  text-left">
                 <img
                   className="row-start-1 col-start-1 size-5 col-end-1 row-end-1 "
-                  src={images.phoneOutlineIcon}
+                  src={images.emailOutlineIcon}
                 />
                 <h5 className="row-start-1 font-bold text-md">Mail Us</h5>
                 <p className="col-start-2 text-sm">luminadentalph@gmail.com</p>

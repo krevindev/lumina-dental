@@ -28,11 +28,13 @@ import starEmpty from "../assets/icons/star-empty.svg";
 import starFilled from "../assets/icons/star-filled.svg";
 
 import phoneOutlineIcon from "../assets/icons/phone-outline.svg";
+import emailOutlineIcon from "../assets/icons/email-icon.svg";
 
 import vLeftIcon from "../assets/icons/v-left-icon.svg";
 import vLeftIconWhite from "../assets/icons/v-left-icon-white.svg";
 
 export default {
+  emailOutlineIcon,
   vLeftIconWhite,
   vLeftIcon,
   phoneOutlineIcon,
