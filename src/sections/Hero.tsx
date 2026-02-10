@@ -57,7 +57,7 @@ export default function Hero() {
       <div className="lg:w-1/2 max-h-[80vh] flex-col z-10 h-full w-full flex justify-center items-center">
         {/* Hero Image */}
         <div
-          className="h-[80%] border-2 border-white w-full lg:w-[80%] bg-center bg-cover rounded-4xl rounded-br-[50px] lg:rounded-br-[150px] bg-no-repeat shadow-lg relative transition-all duration-1000 bg-white"
+          className="h-[80%] border-2 border-white w-full lg:w-full bg-center bg-cover rounded-4xl rounded-br-[50px] lg:rounded-br-[150px] bg-no-repeat shadow-lg relative transition-all duration-1000 bg-white"
           style={{
             backgroundImage: `url(${heroImagesData[heroIndex]})`,
           }}
