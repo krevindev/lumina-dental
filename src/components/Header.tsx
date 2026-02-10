@@ -73,8 +73,9 @@ export default function Header() {
             { title: "Services", href: "#services" },
             { title: "About Us", href: "#about-us" },
             { title: "Contact Us", href: "#contact-us" },
-          ].map((navLink) => (
+          ].map((navLink, idx) => (
             <a
+              key={idx}
               className={`${isSideNavOpen ? "flex" : "hidden"} text-[clamp(18px,5vw,30px)] text-nowrap`}
               onClick={() => setIsSideNavOpen(false)}
               href={navLink.href}
