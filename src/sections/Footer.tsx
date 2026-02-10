@@ -1,4 +1,7 @@
 import images from "@/constants/images";
+import fbIcon from "../assets/icons/fb-icon.svg";
+import liIcon from "../assets/icons/li-icon.svg";
+import igIcon from "../assets/icons/ig-icon.svg";
 
 export default function Footer() {
   return (
@@ -20,10 +23,12 @@ export default function Footer() {
         </div>
 
         {/* Contact */}
-        <div className="flex flex-col gap-4">
-          <h2 className="font-semibold text-lg">Contact Us</h2>
+        <div className="flex flex-col gap-4 items-center">
+          <h2 className="font-semibold text-lg text-center md:text-left">
+            Contact Us
+          </h2>
 
-          <div className="flex flex-row md:flex-col gap-3 justify-center items-center">
+          <div className="flex flex-row md:flex-col gap-3 justify-center md:justify-start md:items-start items-center text-center md:text-left">
             <div className="text-xs">
               <p className="font-semibold">Marcelius Branch</p>
               <p className="font-light">+63 917 123 4567</p>
@@ -37,9 +42,13 @@ export default function Footer() {
         </div>
 
         {/* Social */}
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 justify-start items-center">
           <h2 className="font-semibold text-lg">Follow Us</h2>
-          {/* social icons here */}
+          <div className="flex gap-3 items-center">
+            <img className="size-6" src={fbIcon} />
+            <img className="size-6" src={liIcon} />
+            <img className="size-6" src={igIcon} />
+          </div>
         </div>
       </div>
 
