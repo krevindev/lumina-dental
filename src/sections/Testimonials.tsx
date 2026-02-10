@@ -2,15 +2,15 @@ import TestimonialCarousel from "@/components/TestimonialCarousel";
 
 export default function Testimonials() {
   return (
-    <div className=" max-h-screen min-h-fit h-fit py-20 w-full text-white grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] z-10 relative">
+    <div className=" max-h-screen min-h-fit h-fit py-20 w-full text-white grid grid-cols-[repeat(auto-fit,minmax(400px,1fr))] z-10 relative">
       {/* <div className="bg-[#739FEC] w-125 h-125 opacity-60 absolute rounded-full z-0 left-[15%] -top-[90%] translate-y-[20%]" /> */}
       <div className="bg-white w-125 h-125 fixed left-0 bottom-0 -translate-x-[80%] translate-y-[50%] rounded-full blur-[150px] z-0 opacity-40"></div>
 
       <div className="pb-10 md:pb-0 flex justify-center items-start flex-col text-left z-10">
-        <h1 className="text-[clamp(24px,9vw,50px)]  w-full lg:text-[clamp(15px,9vw,50px)] leading-tight lg:leading-15 text-center md:text-left">
+        <h1 className="text-[clamp(24px,9vw,50px)]  w-full lg:text-[clamp(15px,5vw,45px)] leading-tight lg:leading-15 text-center lg:text-left">
           Complete <b>Dental Care</b>, <b>Personalized</b> for You
         </h1>
-        <p className="text-[clamp(7px,4vw,20px)] w-full font-light mt-2 flex justify-start items-start text-center md:text-left">
+        <p className="text-[clamp(7px,4vw,20px)] w-full font-light mt-2 flex justify-start items-start text-center lg:text-left md:pb-5">
           Patient feedback reflects the quality of care, professionalism, and
           patient focused approach provided by our clinic.
         </p>
