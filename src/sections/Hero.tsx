@@ -21,7 +21,10 @@ export default function Hero() {
   }, []);
 
   return (
-    <div id="home" className="h-[80vh] text-white flex flex-col-reverse lg:flex-row justify-center lg:justify-between relative min-h-fit z-10">
+    <div
+      id="home"
+      className="h-[80vh] text-white flex flex-col-reverse lg:flex-row justify-center lg:justify-between relative min-h-fit z-10"
+    >
       {/* BG Elements */}
       <div className="bg-white z-0 w-125 h-125 fixed right-0 bottom-0 rounded-full blur-[100px] opacity-30"></div>
       <div className="bg-blue-200 z-0 w-125 h-125 absolute bottom-0 left-0 translate-y-[70%] -translate-x-[70%] rounded-full blur-[100px] opacity-40"></div>
@@ -57,7 +60,7 @@ export default function Hero() {
       <div className="lg:w-1/2 max-h-[80vh] flex-col z-10 h-full w-full flex justify-center items-center">
         {/* Hero Image */}
         <div
-          className="h-[80%] border-2 border-white w-full lg:w-full bg-center bg-cover rounded-4xl rounded-br-[50px] lg:rounded-br-[150px] bg-no-repeat shadow-lg relative transition-all duration-1000 bg-white"
+          className="h-[80%] lg:border-2 border-0 border-white w-full lg:w-full bg-center bg-cover rounded-4xl rounded-br-[50px] lg:rounded-br-[150px] bg-no-repeat shadow-lg relative transition-all duration-1000 bg-white"
           style={{
             backgroundImage: `url(${heroImagesData[heroIndex]})`,
           }}
@@ -70,7 +73,9 @@ export default function Hero() {
             <img src={images.heroPhoneIcon} className="mr-2 size-8" />
             <div className="flex flex-col justify-start items-center">
               <p className="text-[10px] lg:text-sm">24 hour service</p>
-              <h4 className="text-[12px] lg:text-sm font-bold">(302) 555-0107</h4>
+              <h4 className="text-[12px] lg:text-sm font-bold">
+                (302) 555-0107
+              </h4>
             </div>
           </div>
           {/* Pagination Circles */}
